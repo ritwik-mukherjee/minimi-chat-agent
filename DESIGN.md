@@ -27,7 +27,7 @@
 | Recall: earlier today (after the Neon turn) | claude-sonnet-5-5 | 2 ms | 8.6 s | 10.5 s | 1 |
 
     On search turns the API sends the answer text in one burst at the end (Stage 0: first search at 0.9 s, all text within 1 ms at 5.9 s), so total time and time to first status event are the honest numbers, not time to first token. "First event" is the recalled or routed event; the first search query follows at about 1 s.
-*   **Good to talk to.** The status line says what the agent is doing ("Found your question from Tuesday 3 November", "Searching: Supabase pricing"), driven only by server events. Memory is visible in one sitting: "earlier today" takes the same path as "last Tuesday", and a saved-turns view lists everything stored.
+*   **Good to talk to.** The status line says what the agent is doing ("Found your question from Tuesday 3 November", "Searching: Supabase pricing"), driven only by server events. Memory is visible in one sitting: "earlier today" takes the same path as "last Tuesday", and a saved-turns view lists everything stored. The page also has a small 3D cat (three.js from a CDN, with a flat SVG fallback) whose pose follows the same events. After live testing, the system prompt was tightened so a question with nothing saved still gets a category search, and earlier answers are sent back with their sources so the model knows they were cited.
 *   **Cost.** Sonnet 5.5 is $2 per million input tokens and $10 per million output tokens; search is $10 per 1,000. The cap is 5 searches per turn, or 8 on a then-versus-now turn, so search costs at most $0.08 a turn. Earlier search results are never sent back.
 
 ## Considered and rejected
