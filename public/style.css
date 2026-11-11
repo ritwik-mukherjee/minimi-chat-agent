@@ -1,34 +1,17 @@
+/* Look and feel follow projectminimi.com: white page, black type, one orange accent, grey cards, black pill buttons. */
 :root {
-  --bg: #fafaf8;
-  --surface: #ffffff;
-  --text: #1c1c1a;
-  --muted: #666660;
-  --line: #deded8;
-  --accent: #2f5fd0;
-  --accent-text: #ffffff;
-  --user-bg: #e9eefb;
-  --warn-bg: #fff4d6;
-  --warn-line: #e0b84a;
+  --bg: #ffffff;
+  --text: #000000;
+  --muted: #6b6b6b;
+  --card: #f5f5f5;
+  --line: #e6e6e6;
+  --accent: #e8894a;
+  --user-bg: #f0f0f0;
+  --warn-bg: #fff4e8;
+  --warn-line: #e8b98a;
   --error-bg: #fdeaea;
   --error-line: #d46a6a;
-  color-scheme: light dark;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #161614;
-    --surface: #1f1f1c;
-    --text: #ecece6;
-    --muted: #a0a098;
-    --line: #343430;
-    --accent: #7ea2f5;
-    --accent-text: #11151f;
-    --user-bg: #232b3f;
-    --warn-bg: #3a3118;
-    --warn-line: #8a7226;
-    --error-bg: #3d2020;
-    --error-line: #8a4444;
-  }
+  color-scheme: light;
 }
 
 * { box-sizing: border-box; }
@@ -37,7 +20,7 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--text);
-  font: 16px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif;
+  font: 16px/1.55 Roboto, Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -55,84 +38,84 @@ body {
 button {
   font: inherit;
   color: var(--text);
-  background: var(--surface);
+  background: var(--bg);
   border: 1px solid var(--line);
-  border-radius: 8px;
-  padding: 0.4rem 0.8rem;
+  border-radius: 100px;
+  padding: 0.4rem 1rem;
   cursor: pointer;
 }
-button:hover:not(:disabled) { border-color: var(--accent); }
+button:hover:not(:disabled) { border-color: var(--text); }
 button:disabled { opacity: 0.5; cursor: not-allowed; }
 :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 
-.top, main, .composer, .banner {
+/* Top bar */
+.top { border-bottom: 1px solid var(--line); background: var(--bg); }
+.bar, main, .composer, .banner {
   width: 100%;
   max-width: 760px;
   margin: 0 auto;
   padding-left: 1rem;
   padding-right: 1rem;
 }
-
-.top {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 1rem;
-  padding-top: 1rem;
-  padding-bottom: 0.5rem;
-}
-.top h1 { margin: 0; font-size: 1.25rem; }
-.tagline { margin: 0; color: var(--muted); font-size: 0.9rem; }
+.bar { display: flex; justify-content: space-between; align-items: center; min-height: 3.5rem; }
+.top h1 { margin: 0; font-size: 1.35rem; font-weight: 700; letter-spacing: -0.02em; }
+.top .sub { color: var(--muted); font-weight: 400; font-size: 1rem; }
 
 .banner {
-  margin-top: 0.5rem;
+  margin-top: 0.75rem;
   padding: 0.75rem 1rem;
   background: var(--error-bg);
   border: 1px solid var(--error-line);
-  border-radius: 8px;
+  border-radius: 12px;
 }
 .banner[hidden] { display: none; }
 
 main { flex: 1; padding-top: 0.5rem; padding-bottom: 1rem; }
 
+/* Empty state */
+.hero { padding: 3rem 0 1rem; }
+.hero h2 { margin: 0 0 1rem; font-size: clamp(2rem, 6vw, 2.75rem); line-height: 1.1; font-weight: 700; letter-spacing: -0.03em; }
+.hero p { margin: 0 0 1.5rem; color: var(--muted); font-size: 1.1rem; max-width: 34rem; }
+.accent { color: var(--accent); }
+.chips { display: flex; flex-wrap: wrap; gap: 0.6rem; }
+.chip { background: var(--card); border-color: var(--card); text-align: left; padding: 0.6rem 1rem; }
+.chip:hover:not(:disabled) { border-color: var(--text); }
 .hint { color: var(--muted); }
 
-.message { margin: 1rem 0; }
+/* Messages */
+.message { margin: 1.25rem 0; }
 .message.user {
   background: var(--user-bg);
-  border-radius: 12px;
-  padding: 0.6rem 0.9rem;
+  border-radius: 20px;
+  padding: 0.65rem 1rem;
   margin-left: 15%;
   white-space: pre-wrap;
   overflow-wrap: anywhere;
 }
 .message.assistant { overflow-wrap: anywhere; }
-
 .answer { white-space: pre-wrap; }
 
 .recalled-card {
-  background: var(--surface);
-  border: 1px solid var(--line);
-  border-left: 4px solid var(--accent);
-  border-radius: 8px;
-  padding: 0.6rem 0.9rem;
-  margin-bottom: 0.6rem;
-  font-size: 0.9rem;
+  background: var(--card);
+  border-radius: 16px;
+  padding: 0.8rem 1rem;
+  margin-bottom: 0.75rem;
+  font-size: 0.92rem;
 }
-.recalled-card h3 { margin: 0 0 0.3rem; font-size: 0.9rem; }
+.recalled-card h3 { margin: 0 0 0.3rem; font-size: 0.92rem; color: var(--accent); }
 .recalled-card ul { margin: 0; padding-left: 1.2rem; }
 .recalled-card .excerpt { color: var(--muted); }
 
-.sources { margin: 0.6rem 0 0; padding-left: 1.2rem; font-size: 0.9rem; }
-.sources a { color: var(--accent); }
+.sources { margin: 0.75rem 0 0; padding-left: 1.2rem; font-size: 0.9rem; }
+.sources a { color: var(--text); text-decoration-color: var(--accent); text-underline-offset: 2px; }
 .sources .host { color: var(--muted); }
 
 .problem {
-  margin-top: 0.6rem;
-  padding: 0.5rem 0.8rem;
+  margin-top: 0.75rem;
+  padding: 0.6rem 0.9rem;
   background: var(--warn-bg);
   border: 1px solid var(--warn-line);
-  border-radius: 8px;
+  border-radius: 12px;
   font-size: 0.9rem;
 }
 .problem.fatal { background: var(--error-bg); border-color: var(--error-line); }
@@ -141,23 +124,24 @@ details.turn-details { margin-top: 0.5rem; color: var(--muted); font-size: 0.85r
 details.turn-details summary { cursor: pointer; }
 details.turn-details ul { margin: 0.3rem 0 0; padding-left: 1.2rem; }
 
+/* Saved turns */
 #saved-panel {
-  background: var(--surface);
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  padding: 0.75rem 1rem;
+  background: var(--card);
+  border-radius: 20px;
+  padding: 1rem 1.25rem;
   margin-top: 1rem;
 }
 #saved-panel[hidden] { display: none; }
 .saved-head { display: flex; justify-content: space-between; align-items: center; gap: 1rem; }
-.saved-head h2 { margin: 0; font-size: 1rem; }
-.saved-day h3 { margin: 1rem 0 0.3rem; font-size: 0.9rem; color: var(--muted); }
-.saved-turn { border-top: 1px solid var(--line); padding: 0.5rem 0; font-size: 0.9rem; }
+.saved-head h2 { margin: 0; font-size: 1.1rem; }
+.saved-day h3 { margin: 1rem 0 0.3rem; font-size: 0.85rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; }
+.saved-turn { border-top: 1px solid var(--line); padding: 0.6rem 0; font-size: 0.9rem; }
 .saved-turn .q { font-weight: 600; }
 .saved-turn .a { color: var(--muted); white-space: pre-wrap; overflow-wrap: anywhere; }
 .saved-turn .meta { color: var(--muted); font-size: 0.8rem; }
-.saved-turn .incomplete { color: #b36b00; font-weight: 600; }
+.saved-turn .incomplete { color: var(--accent); font-weight: 600; }
 
+/* Composer */
 .composer {
   position: sticky;
   bottom: 0;
@@ -166,7 +150,6 @@ details.turn-details ul { margin: 0.3rem 0 0; padding-left: 1.2rem; }
   padding-top: 0.5rem;
   padding-bottom: 1rem;
 }
-
 .status-row { display: flex; align-items: center; gap: 0.6rem; min-height: 2.5rem; }
 #character:empty { display: none; }
 #status { margin: 0; color: var(--muted); font-size: 0.9rem; }
@@ -176,28 +159,28 @@ details.turn-details ul { margin: 0.3rem 0 0; padding-left: 1.2rem; }
   flex: 1;
   font: inherit;
   color: var(--text);
-  background: var(--surface);
+  background: var(--bg);
   border: 1px solid var(--line);
-  border-radius: 8px;
-  padding: 0.5rem 0.7rem;
+  border-radius: 24px;
+  padding: 0.6rem 1.1rem;
   resize: none;
   max-height: 8rem;
 }
-#send { background: var(--accent); color: var(--accent-text); border-color: var(--accent); padding: 0.5rem 1rem; }
+#message:focus { outline: none; border-color: var(--text); }
+#send { background: var(--text); color: var(--bg); border-color: var(--text); padding: 0.6rem 1.4rem; font-weight: 500; }
 
 @media (max-width: 520px) {
   .message.user { margin-left: 0; }
-  .top { flex-direction: column; }
 }
 
 /* ---- Status figure (public/character.js) ---- */
 #character svg { display: block; }
-#character .head { fill: var(--surface); stroke: var(--text); stroke-width: 2; }
+#character .ear, #character .head { fill: var(--card); stroke: var(--text); stroke-width: 2; stroke-linejoin: round; }
 #character .eye { fill: var(--text); }
 #character .mouth, #character .prop path, #character .prop rect, #character .prop circle {
   fill: none; stroke: var(--text); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round;
 }
-#character .prop rect, #character .prop circle { fill: var(--surface); }
+#character .prop rect, #character .prop circle { fill: var(--card); }
 #character .prop-unsure circle { fill: var(--text); }
 #character .prop, #character .mouth-flat, #character .mouth-wavy { display: none; }
 

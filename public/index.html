@@ -8,18 +8,24 @@
 </head>
 <body>
   <header class="top">
-    <div>
-      <h1>minimi chat agent</h1>
-      <p class="tagline">Answers with web search. Remembers what you asked, by date.</p>
+    <div class="bar">
+      <h1>minimi <span class="sub">chat agent</span></h1>
+      <button type="button" id="toggle-saved" aria-expanded="false" aria-controls="saved-panel">Saved turns</button>
     </div>
-    <button type="button" id="toggle-saved" aria-expanded="false" aria-controls="saved-panel">Saved turns</button>
   </header>
 
   <div id="key-banner" class="banner" role="alert" hidden></div>
 
   <main>
     <section id="messages" aria-label="Conversation">
-      <p id="empty-hint" class="hint">Ask anything. Try "What does Neon's free tier include?", then "What did I ask you earlier today? Is it still correct?"</p>
+      <div id="empty-hint" class="hero">
+        <h2>Ask anything.<br>It <span class="accent">remembers</span> what you asked.</h2>
+        <p>Answers with live web search, saves every turn by date, and re-checks old answers when you ask about an earlier day.</p>
+        <div class="chips">
+          <button type="button" class="chip">What does Neon's free tier include?</button>
+          <button type="button" class="chip">What did I ask you earlier today? Is it still correct?</button>
+        </div>
+      </div>
     </section>
 
     <section id="saved-panel" aria-labelledby="saved-heading" hidden>

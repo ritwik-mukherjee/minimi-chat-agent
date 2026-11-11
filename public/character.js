@@ -9,6 +9,7 @@ const FIGURE_SVG = `
 <svg viewBox="0 0 48 48" width="40" height="40" role="img" data-state="idle">
   <title></title>
   <g class="body">
+    <path class="ear" d="M13 18 L14 7 L22 13 Z M35 18 L34 7 L26 13 Z"/>
     <circle class="head" cx="24" cy="24" r="12"/>
     <circle class="eye" cx="20" cy="22" r="1.5"/>
     <circle class="eye" cx="28" cy="22" r="1.5"/>

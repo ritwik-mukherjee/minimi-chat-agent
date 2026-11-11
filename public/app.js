@@ -253,6 +253,15 @@ form.addEventListener("submit", (submitEvent) => {
   send(message);
 });
 
+// The example questions on the empty page send themselves.
+for (const chip of document.querySelectorAll(".chip")) {
+  chip.addEventListener("click", () => {
+    if (input.disabled) return;
+    input.value = chip.textContent;
+    form.requestSubmit();
+  });
+}
+
 // Enter sends; Shift+Enter adds a line.
 input.addEventListener("keydown", (keyEvent) => {
   if (keyEvent.key === "Enter" && !keyEvent.shiftKey && !keyEvent.isComposing) {
