@@ -52,10 +52,15 @@ Reply shapes
   - Could not verify: no search found evidence either way, or the search
     limit was reached. Never report this as unchanged.
 - Nothing saved, but the question names a subject: say in one sentence that
-  nothing is saved for that date, ask for the one missing input if there is
-  one (for example the names on a shortlist), then do the part of the job
-  that needs no saved record, labelled as not being a comparison with the
-  earlier conversation.`;
+  nothing is saved for that date, and ask for the one missing input if there
+  is one (for example the names on a shortlist). You must also run searches
+  in the same reply. Search the subject's category, not the user's missing
+  list: for example for a CRM shortlist, search for CRM pricing changes and
+  major CRM releases since that date, and report up to five dated findings
+  with sources. Label them as general changes in the category, not a
+  comparison with the earlier conversation, and do not call any of the tools
+  the user's shortlist. A reply that only asks for the missing input is
+  wrong.`;
 
 // Removes whole tags of the data blocks from stored text, so it cannot open or close a block.
 // The bare words "turn" or "answer" in ordinary text stay.
@@ -75,11 +80,18 @@ export function buildMessages(input: BuildMessagesInput): ChatMessage[] {
   const messages: ChatMessage[] = [];
   for (const row of input.history) {
     messages.push({ role: "user", content: row.question });
-    const answer = row.answer.trim() === "" ? EMPTY_ANSWER_TEXT : row.answer;
-    messages.push({ role: "assistant", content: answer });
+    messages.push({ role: "assistant", content: historyAnswer(row) });
   }
   messages.push({ role: "user", content: finalUserMessage(input) });
   return messages;
+}
+
+// An earlier answer as chat history. Its sources are listed after it, so the model can see the answer was cited.
+function historyAnswer(row: TurnRow): string {
+  const answer = row.answer.trim() === "" ? EMPTY_ANSWER_TEXT : row.answer;
+  if (row.sources.length === 0) return answer;
+  const lines = row.sources.map((source) => `- ${source.title} - ${source.url}`);
+  return `${answer}\n\n(Sources cited in this answer:\n${lines.join("\n")})`;
 }
 
 function finalUserMessage(input: BuildMessagesInput): string {

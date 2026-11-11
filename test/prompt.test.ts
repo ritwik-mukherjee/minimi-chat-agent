@@ -192,3 +192,26 @@ test("directNoRecordReply uses the table label for a week", () => {
   const miss: MissResult = { kind: "miss", askedFor: week, earliest: null, topicWords: [] };
   assert.match(directNoRecordReply(miss, "2026-11-10"), /^Nothing is saved for the week of Monday 2 November,/);
 });
+
+test("sources of a history answer are listed after it, so the model knows it was cited", () => {
+  const history = [savedTurn({
+    question: "q", answer: "Neon is free.",
+    sources: [{ url: "https://neon.com/pricing", title: "Neon pricing", citedText: "quote" }],
+  })];
+  const messages = buildMessages({ ...BASE, history, recall: null, message: "thanks" });
+  assert.equal(
+    messages[1].content,
+    "Neon is free.\n\n(Sources cited in this answer:\n- Neon pricing - https://neon.com/pricing)",
+  );
+});
+
+test("an empty history answer with sources keeps the placeholder and the sources", () => {
+  const history = [savedTurn({ answer: "", sources: [{ url: "https://a.example", title: "A", citedText: "" }] })];
+  const messages = buildMessages({ ...BASE, history, recall: null, message: "next" });
+  assert.match(messages[1].content, /^\(no answer was given\)/);
+});
+
+test("the system prompt tells the model to search when nothing is saved", () => {
+  assert.match(SYSTEM_PROMPT, /You must also run searches/);
+  assert.match(SYSTEM_PROMPT, /A reply that only asks for the\s+missing input is\s+wrong/);
+});
