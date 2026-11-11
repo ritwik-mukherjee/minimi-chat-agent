@@ -16,11 +16,12 @@ const savedList = document.getElementById("saved-list");
 const clearSaved = document.getElementById("clear-saved");
 
 // The status figure is optional: if character.js is missing, the page works without it.
-const character = await import("./character.js").catch(() => null);
+// It is not awaited, because it may fetch three.js from a CDN and the page must not wait for that.
+const characterReady = import("./character.js").catch(() => null);
 let figureIsUnsure = false;
 
 function setFigure(state, caption) {
-  if (character && typeof character.setState === "function") character.setState(state, caption);
+  characterReady.then((module) => module?.setState?.(state, caption));
 }
 
 function setStatus(text, figureState) {

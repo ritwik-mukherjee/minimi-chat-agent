@@ -73,7 +73,13 @@ button:disabled { opacity: 0.5; cursor: not-allowed; }
 main { flex: 1; padding-top: 0.5rem; padding-bottom: 1rem; }
 
 /* Empty state */
-.hero { padding: 3rem 0 1rem; }
+.hero { padding: 2rem 0 1rem; display: flex; align-items: center; gap: 1rem; }
+.hero-text { flex: 1; }
+#hero-cat { flex: 0 0 280px; width: 280px; height: 320px; }
+@media (max-width: 640px) {
+  .hero { flex-direction: column; align-items: flex-start; }
+  #hero-cat { width: 100%; flex-basis: auto; height: 260px; }
+}
 .hero h2 { margin: 0 0 1rem; font-size: clamp(2rem, 6vw, 2.75rem); line-height: 1.1; font-weight: 700; letter-spacing: -0.03em; }
 .hero p { margin: 0 0 1.5rem; color: var(--muted); font-size: 1.1rem; max-width: 34rem; }
 .accent { color: var(--accent); }
@@ -156,6 +162,7 @@ details.turn-details ul { margin: 0.3rem 0 0; padding-left: 1.2rem; }
   padding-bottom: 1rem;
 }
 .status-row { display: flex; align-items: center; gap: 0.6rem; min-height: 2.5rem; }
+#character { width: 56px; height: 64px; display: flex; align-items: center; justify-content: center; }
 #character:empty { display: none; }
 #status { margin: 0; color: var(--muted); font-size: 0.9rem; }
 
