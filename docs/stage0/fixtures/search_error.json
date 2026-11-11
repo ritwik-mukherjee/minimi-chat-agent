@@ -1,0 +1,2157 @@
+{
+  "events": [
+    {
+      "type": "message_start",
+      "message": {
+        "model": "claude-sonnet-5-5",
+        "id": "msg_011CgvZhCCaVy3BhA7TdTSYJ",
+        "type": "message",
+        "role": "assistant",
+        "content": [],
+        "container": null,
+        "stop_reason": null,
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 3750,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 16,
+          "service_tier": "standard",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    },
+    {
+      "type": "content_block_start",
+      "index": 0,
+      "content_block": {
+        "type": "server_tool_use",
+        "id": "srvtoolu_01RN37LCKKiFFjAVXVpeMpXA",
+        "name": "web_search",
+        "input": {}
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 0,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": ""
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 0,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": "{\"query"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 0,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": "\": \"Neo"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 0,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": "n Postg"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 0,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": "res fre"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 0,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": "e plan "
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 0,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": "limits "
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 0,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": "pricing"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 0,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": "\"}"
+      }
+    },
+    {
+      "type": "content_block_stop",
+      "index": 0
+    },
+    {
+      "type": "content_block_start",
+      "index": 1,
+      "content_block": {
+        "type": "server_tool_use",
+        "id": "srvtoolu_01KtZo7oghcNPzf6SujXqsds",
+        "name": "web_search",
+        "input": {}
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 1,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": ""
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 1,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": "{\"query"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 1,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": "\": \"Sup"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 1,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": "abase f"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 1,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": "ree pla"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 1,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": "n limit"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 1,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": "s prici"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 1,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": "ng\"}"
+      }
+    },
+    {
+      "type": "content_block_stop",
+      "index": 1
+    },
+    {
+      "type": "content_block_start",
+      "index": 2,
+      "content_block": {
+        "type": "web_search_tool_result",
+        "tool_use_id": "srvtoolu_01RN37LCKKiFFjAVXVpeMpXA",
+        "content": [
+          {
+            "type": "web_search_result",
+            "title": "Neon plans - Neon Docs",
+            "url": "https://neon.com/docs/introduction/plans",
+            "encrypted_content": "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",
+            "page_age": "6 days ago"
+          },
+          {
+            "type": "web_search_result",
+            "title": "What are the limits and quotas for Neon's Free plan? - Neon FAQs",
+            "url": "https://neon.com/faqs/free-plan-limits-and-quotas",
+            "encrypted_content": "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",
+            "page_age": "7 days ago"
+          },
+          {
+            "type": "web_search_result",
+            "title": "What are the best free or low-cost managed Postgres services for side projects that scale automatically when traffic picks up? - Neon FAQs",
+            "url": "https://neon.com/faqs/best-free-low-cost-managed-postgres-services",
+            "encrypted_content": "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",
+            "page_age": null
+          },
+          {
+            "type": "web_search_result",
+            "title": "Neon - Features, Pricing & Alternatives",
+            "url": "https://www.srvrlss.io/provider/neon/",
+            "encrypted_content": "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",
+            "page_age": "48 days ago"
+          },
+          {
+            "type": "web_search_result",
+            "title": "Neon Pricing: The Honest Cost of Serverless Postgres",
+            "url": "https://selfhost.dev/blog/neon-pricing-cost-of-serverless-postgres/",
+            "encrypted_content": "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",
+            "page_age": "10 days ago"
+          },
+          {
+            "type": "web_search_result",
+            "title": "Neon Pricing 2026: Plans, Limits & Changes",
+            "url": "https://www.saaspricepulse.com/tools/neon",
+            "encrypted_content": "EsANCioIFRgCIiQ4MGE4NWIyYy1hY2NjLTQ4YzYtOWZmMS0yOTBiNjFlOTE5N2QSDBF9Sl485BoNeyRXjBoMDotaNQu3sKGSAnLyIjAMo2iAJwLerpAC+zP/9Q+A9buTPkU/PeJsEQ/7j5RqZypsLH2gOcyro1E+MGL7srMqwwxh0n2RoWzitwRtfPiNM8slVjzNEmoFHsTtS86vNRykijxOOD4sisX70plV91Lrbo0JfJ9YL8cCBBR8dKxoalRtuPvGSJ8IY3xTxTYwFVfNsev/8dYEfwUbAlXt1Qx+MU4vUSUt7CgzIWVSHEDhtlqmg1JTs4bqLk0XLi8S/QsTfNMyogO/ApVY2ciFGkmOGEJ63q4oi9eTz0gUn13pOYRySfVOT5H77NJoB58gD8Y2G+1xsXSJ2i95YY7zEgZCg4VlsozS3ZtxTFEYVD4TH+Yhjv6UD5UWh1bqydxARMy2qx1TLXS1O/LhmTCJqQwyWjL0uP1zcT8El3QK8lKVBA8o9kZqhdqvlutRkM5WM/xuW/efhYzzOI718NO+2R89glFO4oRJE2FqZvpTwb9lBUn4weT8WNrc4KXT4rVnjQVRzVmYlyXU/0apXJs5wfd7ul0xNsqOoxtBYYXOotHzfl0YYqo7JoIHM8hZNTJVCh6uivGzxov7BiN2mkYuTX+ysmAYr/rlQgZUEE6rYfMULVGs2/8oKQxv2iZnnDtvbOBXFtDGJGikZnFjQv1LW7Oh+Lnv4pTDSrOPxOd6JQEoXiFt6gbjDnRStZGqY4slaQIBtTsbG4Tx4Ha91cjNo7SJiX2i0tan/0zP1Efyyk3I+++zwZ3dWFc8J/pX0EtpNwuUY7nlAvU80jr8YpwKTOKyv3eW0bvc6TgmMhJwcNPxm28TJKIh1N2SWV1dX6DMlddH5YabTXWi5JIV9VYbi9gg5j4znIuttDJHqNGgiQovgL9tMiFfTwS+J12JU9E/kkPpNJ7nGzYCgmRZhY+ftc+dB7iv85DVI30Ip5/f0uDmhmUiB3Q7gRCrOcWLwXZCR2qTkw+PJNxiZYO5/NQ8xPukTtsqiMoan9hNmzaLTIjZDf82nfe6SihB3OTCGccNoBSBO8QdjS7R14G+aiWmFroZnhTLVQSG6USUMlyl6EqSmVi8wcxIivttXnLVAWsmKPSXyo9nXnmBbUOX6DlPuJnwTq6nWXXnKlF71k6jHmodOxJMz19QZmwOB+4ZKEunungN38vC1paiTbL2vlSPH6J0cNc4SA6DP/gPWZOrQCKgPHvlk/pBfOJJGyGhGoIai2I8f0H3g0r0aV3G2WCsncrsQXeaDJz9s0H1bKJEw3000w4e92bqw70kHisXtA8+nnfwSnJETg+/9C2/5+R5r0eRPEd38m7Cx9+N1Pe9oBe9CYI+gG/m+r0psfOrHTWRqYX3dicJF/H0q8758LZLcpBLJVi5xXqYwlgnL+cWZvQ5R52EHg9+bywnZU/cSPKxSJDT3gHEfmGLeP58WnbadDS//MqqnhINMHNArztFkxAd+sT0ZlP+6SsVVFHIbje/quZBBnze9zL4CpWzhDXZJJzV7vFh2iRvm6NoP9aMLflvNjjF7ekaM3VE6k3jrmv97zvwk1WkTmtLuqHuRMKWx6gr6mbprO3NpUtL7mzVWBYH1swv8BbYKSc/RNc/D8X+hM/SYjI/JU/YPI2QMhZIeS1ts7A+oXR/ROZJfnEQOljhbhMPdZoikwd4NnodzrQLaHjTLsWqaVTs0M93xdNEUgpmax9SmHW9j2e1z8oREJlkq+TzgUnX9rzyLf+Fg1jy0KaPezDq6oHbKs5Upudm4s8bUJxw9Q/RVmKJKi1wkjB4Gav3a1I4hJwgL3RTAYbV5nqwGePdJxwavjGRaZwCD3a9HJpzhwxgQdHV7JSY1ci0Izvg/9OFtxGg6JY0u4Df611A1x3P6snL5fhoZ47YIQvgxTJE6p6sk+ZxlYnrQ6AdtXiJs1HHrCdMuPgMGlVhY/k8ebYig+bgGK3eK3vHylt2EIVOy2vhj5HtBcz+Efd+vQMyoo1uYF5nSQRAuYaYT6QGOJMjI7futtPMTMYiylO5uwQy59eMJ37Jd8TAchyASw6qiNfaIXeZ3LPdpJEk+Lx7KolM8oi59a8/AOD2V1UfOEMwS75hllqq+vIs4anAMZ7cnk4IT/Miy8xRrytO9vbrQ4W9MR9zSyqv7CRECLfMP9nuM6C3VVjHy6JhI79dMAo+CkSss0T1P7KQgjc3F7u5ctJHmAajgagNPBLusTCYeOowWtKFhBJ2/7+UKWGQ15Cl8wGPGAM=",
+            "page_age": "369 days ago"
+          },
+          {
+            "type": "web_search_result",
+            "title": "Neon Postgres Review 2026: Features, Pricing & Limits",
+            "url": "https://codewithsql.com/cloud-databases/postgresql/neon",
+            "encrypted_content": "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",
+            "page_age": null
+          },
+          {
+            "type": "web_search_result",
+            "title": "Neon Serverless Postgres Pricing 2026: Complete Breakdown &…",
+            "url": "https://vela.run/articles/neon-serverless-postgres-pricing-2026/",
+            "encrypted_content": "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",
+            "page_age": "141 days ago"
+          },
+          {
+            "type": "web_search_result",
+            "title": "Neon - Data Storage",
+            "url": "https://datastorage.com/cloud_providers/neon/",
+            "encrypted_content": "EswJCioIFRgCIiQ4MGE4NWIyYy1hY2NjLTQ4YzYtOWZmMS0yOTBiNjFlOTE5N2QSDGv8mU6aNggftmkezhoMuyBNOsu3MRfjnu5BIjCZ7WYQ9LiATKxhdghJTm6y0VngsNlnhTpRZqCRg9MbOmi1t2K6GIccr3NBJJU8S+oqzwiYvP5NJrN67/xYMm78xNH7ZpJNcWndw3/GWWJyuwENhtQKNh9eA2q7xZCl50YCJPRJmWvt2lqoZQ9sPzoCAvN20x7dRQlUZm5Q1LLfGWF4BSaDMqePnBpvsIzPBqF1O73odMaDU78avPQaw3D0bo35eCYsNkl1POCr7dNeo+AfdLo4naMqHrjSQts1iR5T7NYfwo7/lWLshz4sx5ACB5sH+GTXzD8BQraHx4Y4YwrnSRO3FlYi+Gc7T3fLLr6TKSB+E36p7yprVEfgjYmCjPOBDFcjFYUJZVmnD9dIg2BPbhx0QsFhnGkf8LnuahQIPg8UtsKDX5gLhexpkgb6wbhRVT5VryTZFdZw8OXr0en1ZxMjzTZTYa1EpOXmWHUqzKOkMZMqpc52ahgShotA+Aa/16aNljbfugmYqINBEUAXT81hCEcnGC2TXZz6TaCgAMPxQe1m3DXPGJC9HY8+b3+IUFbjj6I6r/nAzyckf4+JgwdQWaPP3Z5zAoZIbGxrZuGRZSPwMVjR/coMuHXCs7i1LIozXRI/4WcNZo0QfJcp7UEY4M5f1gIwOCEwon9mZCR1/pOZweLldcNX5x+Dlm/vgM5e4osHr0V+PDZRmFeIzwcQsVGe/Olt+x6Sx1MsfTXJdPCtqgC2Nyy2S6+FdWD6ku2ofctDuqFf/zty+3LETRTE71vKGFUdP9t/oEQMMRpPfmvloafjSyL4dRlX195XQNGn20qz19hWZqoL/37xTlbW9QmXMiQQtB8B7DsFF68X1S8b8VyTn/NBTVsCeP7Dps25G0oQLGQRacEiU/iVwLx2CxJaKqF/OY5/MU3hKp0qPg9v5MlPQeVYymDXFgWcqFxvc2AIlrQMsXi3crLVHraF/5C+CwMSLwclhbFawW77HwOo28BRyGVJSelUKOqEI2XqcV6CT3FZUOa/x+W/hnvmn2xXI7yUhfU9eIJ8GnbR8wHN9ckDkRO10i8tNkwKc3mMyODf9vPlf9tC+8jEN43EZZTKWyizxc/DTqFJyMuObcUxXdxSWP83KwIpJz10bKDX5D4v7hHjFu1S6mXUcHOvXXdT3Fi8hQBkprZ+Mk+fbu2Td0FVXSWSf9Q78oqtMttQAXnKgyYF6cEcfdLySVe79rZUVu1iyZR96E83FTcSq5xwxKtMcBbZlmNY3pyfHPunGf4bU1BvHz5dICfLgLh2UtCXr38BLgzu4PRScfLvyKCg9VzACtsaLgWWrEpZneg+sPI3uI6YJUOoAO+8Ay1WBds01qeeseUGbeDE2a4IDsyaOgphDdVbUBDVBMsnHTCx3LTPvxCToPKhI87+26eNRDA1lcrFfpxNlm0Cb9Er384BDcXC6lXoNkZL3rD7iZ5ZzHVB2getl+BnZ2yMyTzfz5XCa4u5XablnQd8ZbNZLL10h3byR9j4XbIIM5pekYiIrXpOTYtjXmqSHv9ZuzifiwepgDZ8RqUVdSVjUxgD",
+            "page_age": "147 days ago"
+          }
+        ],
+        "caller": {
+          "type": "direct"
+        }
+      }
+    },
+    {
+      "type": "content_block_stop",
+      "index": 2
+    },
+    {
+      "type": "content_block_start",
+      "index": 3,
+      "content_block": {
+        "type": "web_search_tool_result",
+        "tool_use_id": "srvtoolu_01KtZo7oghcNPzf6SujXqsds",
+        "content": {
+          "type": "web_search_tool_result_error",
+          "error_code": "max_uses_exceeded"
+        },
+        "caller": {
+          "type": "direct"
+        }
+      }
+    },
+    {
+      "type": "content_block_stop",
+      "index": 3
+    },
+    {
+      "type": "content_block_start",
+      "index": 4,
+      "content_block": {
+        "type": "text",
+        "text": ""
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 4,
+      "delta": {
+        "type": "text_delta",
+        "text": "I could"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 4,
+      "delta": {
+        "type": "text_delta",
+        "text": " only get results"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 4,
+      "delta": {
+        "type": "text_delta",
+        "text": " for Neon. The Sup"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 4,
+      "delta": {
+        "type": "text_delta",
+        "text": "abase search failed because"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 4,
+      "delta": {
+        "type": "text_delta",
+        "text": " of"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 4,
+      "delta": {
+        "type": "text_delta",
+        "text": " a search lim"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 4,
+      "delta": {
+        "type": "text_delta",
+        "text": "it, so I can't give you"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 4,
+      "delta": {
+        "type": "text_delta",
+        "text": " current"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 4,
+      "delta": {
+        "type": "text_delta",
+        "text": " Supabase details"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 4,
+      "delta": {
+        "type": "text_delta",
+        "text": " from"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 4,
+      "delta": {
+        "type": "text_delta",
+        "text": " a"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 4,
+      "delta": {
+        "type": "text_delta",
+        "text": " source"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 4,
+      "delta": {
+        "type": "text_delta",
+        "text": ".\n\n**"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 4,
+      "delta": {
+        "type": "text_delta",
+        "text": "Neon"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 4,
+      "delta": {
+        "type": "text_delta",
+        "text": " Free plan (as of 11"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 4,
+      "delta": {
+        "type": "text_delta",
+        "text": " November 2026)**"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 4,
+      "delta": {
+        "type": "text_delta",
+        "text": "\n\nNeon's own"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 4,
+      "delta": {
+        "type": "text_delta",
+        "text": " docs and FAQ,"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 4,
+      "delta": {
+        "type": "text_delta",
+        "text": " both"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 4,
+      "delta": {
+        "type": "text_delta",
+        "text": " upd"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 4,
+      "delta": {
+        "type": "text_delta",
+        "text": "ated within the last week, list"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 4,
+      "delta": {
+        "type": "text_delta",
+        "text": " these"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 4,
+      "delta": {
+        "type": "text_delta",
+        "text": " all"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 4,
+      "delta": {
+        "type": "text_delta",
+        "text": "owances:\n- **"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 4,
+      "delta": {
+        "type": "text_delta",
+        "text": "Price:** "
+      }
+    },
+    {
+      "type": "content_block_stop",
+      "index": 4
+    },
+    {
+      "type": "content_block_start",
+      "index": 5,
+      "content_block": {
+        "citations": [],
+        "type": "text",
+        "text": ""
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 5,
+      "delta": {
+        "type": "citations_delta",
+        "citation": {
+          "type": "web_search_result_location",
+          "cited_text": "The Neon Free plan costs $0/month and includes 100 projects, 10 branches per project, 100 CU-hours of compute per project per month, 1 GB of Postgres ...",
+          "url": "https://neon.com/faqs/free-plan-limits-and-quotas",
+          "title": "What are the limits and quotas for Neon's Free plan? - Neon FAQs",
+          "encrypted_index": "Eo8BCioIFRgCIiQ4MGE4NWIyYy1hY2NjLTQ4YzYtOWZmMS0yOTBiNjFlOTE5N2QSDGCJQgEBUGxYKTX3yRoMgJn6BYCb5gfpZGyEIjAMp+Iaq/VzBYPl+i8t8q1H8vVAhYJ9RapZaAfjxPyjOgR8++LvSxn96PnFUuVeh/IqE7a9YZ4fSnBFnn+DXOjZ3ItFKgAYBA=="
+        }
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 5,
+      "delta": {
+        "type": "text_delta",
+        "text": "$"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 5,
+      "delta": {
+        "type": "text_delta",
+        "text": "0/month"
+      }
+    },
+    {
+      "type": "content_block_stop",
+      "index": 5
+    },
+    {
+      "type": "content_block_start",
+      "index": 6,
+      "content_block": {
+        "type": "text",
+        "text": ""
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 6,
+      "delta": {
+        "type": "text_delta",
+        "text": "."
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 6,
+      "delta": {
+        "type": "text_delta",
+        "text": "\n- **Projects and"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 6,
+      "delta": {
+        "type": "text_delta",
+        "text": " branches:** "
+      }
+    },
+    {
+      "type": "content_block_stop",
+      "index": 6
+    },
+    {
+      "type": "content_block_start",
+      "index": 7,
+      "content_block": {
+        "citations": [],
+        "type": "text",
+        "text": ""
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 7,
+      "delta": {
+        "type": "citations_delta",
+        "citation": {
+          "type": "web_search_result_location",
+          "cited_text": "The Neon Free plan costs $0/month and includes 100 projects, 10 branches per project, 100 CU-hours of compute per project per month, 1 GB of Postgres ...",
+          "url": "https://neon.com/faqs/free-plan-limits-and-quotas",
+          "title": "What are the limits and quotas for Neon's Free plan? - Neon FAQs",
+          "encrypted_index": "Eo8BCioIFRgCIiQ4MGE4NWIyYy1hY2NjLTQ4YzYtOWZmMS0yOTBiNjFlOTE5N2QSDKyvEODv4f962jVZCRoMUyAFyDax9Z513LCxIjDgyJKDkv2ZLF2r6qKfYqd1A818w047tiD0HpRWwPyWuH9fCMDogH5DjUFic6/NQlYqE77NNPGhNNYpQTm7yJHZu0NDwoMYBA=="
+        }
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 7,
+      "delta": {
+        "type": "text_delta",
+        "text": "100 projects, with"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 7,
+      "delta": {
+        "type": "text_delta",
+        "text": " 10 branches per project"
+      }
+    },
+    {
+      "type": "content_block_stop",
+      "index": 7
+    },
+    {
+      "type": "content_block_start",
+      "index": 8,
+      "content_block": {
+        "type": "text",
+        "text": ""
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 8,
+      "delta": {
+        "type": "text_delta",
+        "text": "."
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 8,
+      "delta": {
+        "type": "text_delta",
+        "text": "\n- **Compute:** "
+      }
+    },
+    {
+      "type": "content_block_stop",
+      "index": 8
+    },
+    {
+      "type": "content_block_start",
+      "index": 9,
+      "content_block": {
+        "citations": [],
+        "type": "text",
+        "text": ""
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 9,
+      "delta": {
+        "type": "citations_delta",
+        "citation": {
+          "type": "web_search_result_location",
+          "cited_text": "The Neon Free plan costs $0/month and includes 100 projects, 10 branches per project, 100 CU-hours of compute per project per month, 1 GB of Postgres ...",
+          "url": "https://neon.com/faqs/free-plan-limits-and-quotas",
+          "title": "What are the limits and quotas for Neon's Free plan? - Neon FAQs",
+          "encrypted_index": "Eo8BCioIFRgCIiQ4MGE4NWIyYy1hY2NjLTQ4YzYtOWZmMS0yOTBiNjFlOTE5N2QSDDOh6GutaRl2puWavxoM8OoYA/wfwTrmRYgoIjBlJUXwsKs/1xNZWOx8pr2J/bYNNDSefjXN6J7DLjltdNwrkaSAHK1xIyZKB5xWMaoqE1Hy2nxV0ao6OMiw5QyBhYV1xJsYBA=="
+        }
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 9,
+      "delta": {
+        "type": "text_delta",
+        "text": "100 CU-"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 9,
+      "delta": {
+        "type": "text_delta",
+        "text": "hours per"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 9,
+      "delta": {
+        "type": "text_delta",
+        "text": " project per month"
+      }
+    },
+    {
+      "type": "content_block_stop",
+      "index": 9
+    },
+    {
+      "type": "content_block_start",
+      "index": 10,
+      "content_block": {
+        "type": "text",
+        "text": ""
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 10,
+      "delta": {
+        "type": "text_delta",
+        "text": ". "
+      }
+    },
+    {
+      "type": "content_block_stop",
+      "index": 10
+    },
+    {
+      "type": "content_block_start",
+      "index": 11,
+      "content_block": {
+        "citations": [],
+        "type": "text",
+        "text": ""
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 11,
+      "delta": {
+        "type": "citations_delta",
+        "citation": {
+          "type": "web_search_result_location",
+          "cited_text": "Computes scale to zero after 5 minutes of inactivity and can scale up to 2 CU (≈8 GB RAM) when active.\n\n",
+          "url": "https://neon.com/faqs/free-plan-limits-and-quotas",
+          "title": "What are the limits and quotas for Neon's Free plan? - Neon FAQs",
+          "encrypted_index": "Eo8BCioIFRgCIiQ4MGE4NWIyYy1hY2NjLTQ4YzYtOWZmMS0yOTBiNjFlOTE5N2QSDFVnOTt+SGBeRAUlhBoMMUcAO5M6Lt2U5uG2IjCmE69xrk8CiRFD1WIqo2mXFoO3rHp/GRDuvRLy+814GZnqLSxVnvJOKb3rKsUA9ncqE4NBueRTVtR8IzUJjx2v4Uj5P/4YBA=="
+        }
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 11,
+      "delta": {
+        "type": "text_delta",
+        "text": "Computes scale to zero after"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 11,
+      "delta": {
+        "type": "text_delta",
+        "text": " 5 minutes of in"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 11,
+      "delta": {
+        "type": "text_delta",
+        "text": "activity and can scale up"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 11,
+      "delta": {
+        "type": "text_delta",
+        "text": " to 2 CU ("
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 11,
+      "delta": {
+        "type": "text_delta",
+        "text": "about"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 11,
+      "delta": {
+        "type": "text_delta",
+        "text": " 8 GB RAM"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 11,
+      "delta": {
+        "type": "text_delta",
+        "text": ") when active."
+      }
+    },
+    {
+      "type": "content_block_stop",
+      "index": 11
+    },
+    {
+      "type": "content_block_start",
+      "index": 12,
+      "content_block": {
+        "type": "text",
+        "text": ""
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 12,
+      "delta": {
+        "type": "text_delta",
+        "text": "\n- **Stor"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 12,
+      "delta": {
+        "type": "text_delta",
+        "text": "age:** "
+      }
+    },
+    {
+      "type": "content_block_stop",
+      "index": 12
+    },
+    {
+      "type": "content_block_start",
+      "index": 13,
+      "content_block": {
+        "citations": [],
+        "type": "text",
+        "text": ""
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 13,
+      "delta": {
+        "type": "citations_delta",
+        "citation": {
+          "type": "web_search_result_location",
+          "cited_text": "** The Free plan is limited to 1 GB of Postgres storage per project, and to 20 GB in total across all your projects. ",
+          "url": "https://neon.com/docs/introduction/plans",
+          "title": "Neon plans - Neon Docs",
+          "encrypted_index": "Eo8BCioIFRgCIiQ4MGE4NWIyYy1hY2NjLTQ4YzYtOWZmMS0yOTBiNjFlOTE5N2QSDDeNnOrLq/Yczw42HxoMZmg/k/TvlghTQTCJIjBhhGTMrFp4jKWlSQpN6hu3Ip9JM4oF1uJN1OZauYvRhJaDQ04bR/FdANw52F8zinsqE4+5JMWiju3Stv9xvSTeuJGpW+0YBA=="
+        }
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 13,
+      "delta": {
+        "type": "text_delta",
+        "text": "1"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 13,
+      "delta": {
+        "type": "text_delta",
+        "text": " GB of Postgres"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 13,
+      "delta": {
+        "type": "text_delta",
+        "text": " storage per project, and"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 13,
+      "delta": {
+        "type": "text_delta",
+        "text": " 20 GB in total across"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 13,
+      "delta": {
+        "type": "text_delta",
+        "text": " all your"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 13,
+      "delta": {
+        "type": "text_delta",
+        "text": " projects."
+      }
+    },
+    {
+      "type": "content_block_stop",
+      "index": 13
+    },
+    {
+      "type": "content_block_start",
+      "index": 14,
+      "content_block": {
+        "type": "text",
+        "text": ""
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 14,
+      "delta": {
+        "type": "text_delta",
+        "text": "\n- **Network trans"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 14,
+      "delta": {
+        "type": "text_delta",
+        "text": "fer:** "
+      }
+    },
+    {
+      "type": "content_block_stop",
+      "index": 14
+    },
+    {
+      "type": "content_block_start",
+      "index": 15,
+      "content_block": {
+        "citations": [],
+        "type": "text",
+        "text": ""
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 15,
+      "delta": {
+        "type": "citations_delta",
+        "citation": {
+          "type": "web_search_result_location",
+          "cited_text": "The Neon Free plan costs $0/month and includes 100 projects, 10 branches per project, 100 CU-hours of compute per project per month, 1 GB of Postgres ...",
+          "url": "https://neon.com/faqs/free-plan-limits-and-quotas",
+          "title": "What are the limits and quotas for Neon's Free plan? - Neon FAQs",
+          "encrypted_index": "Eo8BCioIFRgCIiQ4MGE4NWIyYy1hY2NjLTQ4YzYtOWZmMS0yOTBiNjFlOTE5N2QSDHeiuRtbYfenu2ZqARoMXSz4raSbQ49rsKVBIjCfsQfCSsIQUnGMOXrC/NuIBqijdBoptS6u7nHrgIP3fSuyATTPxwDJ5L310F0e9cYqE3qGt9JEasr033R11lO/EDt6w6gYBA=="
+        }
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 15,
+      "delta": {
+        "type": "text_delta",
+        "text": "5 GB of public network trans"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 15,
+      "delta": {
+        "type": "text_delta",
+        "text": "fer per project per month"
+      }
+    },
+    {
+      "type": "content_block_stop",
+      "index": 15
+    },
+    {
+      "type": "content_block_start",
+      "index": 16,
+      "content_block": {
+        "type": "text",
+        "text": ""
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 16,
+      "delta": {
+        "type": "text_delta",
+        "text": "."
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 16,
+      "delta": {
+        "type": "text_delta",
+        "text": "\n- **Restore window"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 16,
+      "delta": {
+        "type": "text_delta",
+        "text": ":** "
+      }
+    },
+    {
+      "type": "content_block_stop",
+      "index": 16
+    },
+    {
+      "type": "content_block_start",
+      "index": 17,
+      "content_block": {
+        "citations": [],
+        "type": "text",
+        "text": ""
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 17,
+      "delta": {
+        "type": "citations_delta",
+        "citation": {
+          "type": "web_search_result_location",
+          "cited_text": "## Neon free plan limits\n| Limit | Free plan |\n| --- | --- |\n| Projects | 100 |\n| Compute | 100 CU-hours per project per month, autoscaling up to 2 CU...",
+          "url": "https://codewithsql.com/cloud-databases/postgresql/neon",
+          "title": "Neon Postgres Review 2026: Features, Pricing & Limits",
+          "encrypted_index": "Eo8BCioIFRgCIiQ4MGE4NWIyYy1hY2NjLTQ4YzYtOWZmMS0yOTBiNjFlOTE5N2QSDBrsJk898LSYZq6DRRoMEaJrDkgGRHDw/B3mIjCzI138yFDnJ9VN5Gyl/59uGGNy/XZrmULUhRTsiHwIKisK5ZKJlc+dEQEb6e0a+I8qE9bIF6ePACTVvLK0G8BAUU9oCzcYBA=="
+        }
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 17,
+      "delta": {
+        "type": "text_delta",
+        "text": "6 hours, capped"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 17,
+      "delta": {
+        "type": "text_delta",
+        "text": " at 1 GB of change"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 17,
+      "delta": {
+        "type": "text_delta",
+        "text": " history"
+      }
+    },
+    {
+      "type": "content_block_stop",
+      "index": 17
+    },
+    {
+      "type": "content_block_start",
+      "index": 18,
+      "content_block": {
+        "type": "text",
+        "text": ""
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 18,
+      "delta": {
+        "type": "text_delta",
+        "text": "."
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 18,
+      "delta": {
+        "type": "text_delta",
+        "text": " This fig"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 18,
+      "delta": {
+        "type": "text_delta",
+        "text": "ure comes from a third-party"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 18,
+      "delta": {
+        "type": "text_delta",
+        "text": " review."
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 18,
+      "delta": {
+        "type": "text_delta",
+        "text": "\n- **Over"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 18,
+      "delta": {
+        "type": "text_delta",
+        "text": "ages:** "
+      }
+    },
+    {
+      "type": "content_block_stop",
+      "index": 18
+    },
+    {
+      "type": "content_block_start",
+      "index": 19,
+      "content_block": {
+        "citations": [],
+        "type": "text",
+        "text": ""
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 19,
+      "delta": {
+        "type": "citations_delta",
+        "citation": {
+          "type": "web_search_result_location",
+          "cited_text": "Neon does not bill overages on the Free plan.\n\n",
+          "url": "https://neon.com/faqs/free-plan-limits-and-quotas",
+          "title": "What are the limits and quotas for Neon's Free plan? - Neon FAQs",
+          "encrypted_index": "Eo8BCioIFRgCIiQ4MGE4NWIyYy1hY2NjLTQ4YzYtOWZmMS0yOTBiNjFlOTE5N2QSDFXI0BvoihtambaeyhoMqaiZz+71wxDQ18vXIjCD4Ls4/xL55d4kuS12wKya1UPuoKgy6Qx04Mf+QuFqk1GjPixBRddBUx34CWhIBIgqE/C80150jOvKBI4PSep45MOskhsYBA=="
+        }
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 19,
+      "delta": {
+        "type": "text_delta",
+        "text": "Neon does not bill overages"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 19,
+      "delta": {
+        "type": "text_delta",
+        "text": " on the Free plan."
+      }
+    },
+    {
+      "type": "content_block_stop",
+      "index": 19
+    },
+    {
+      "type": "content_block_start",
+      "index": 20,
+      "content_block": {
+        "type": "text",
+        "text": ""
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 20,
+      "delta": {
+        "type": "text_delta",
+        "text": " Writ"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 20,
+      "delta": {
+        "type": "text_delta",
+        "text": "es that would gr"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 20,
+      "delta": {
+        "type": "text_delta",
+        "text": "ow storage past"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 20,
+      "delta": {
+        "type": "text_delta",
+        "text": " the c"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 20,
+      "delta": {
+        "type": "text_delta",
+        "text": "ap fail until you free space or"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 20,
+      "delta": {
+        "type": "text_delta",
+        "text": " upgrade."
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 20,
+      "delta": {
+        "type": "text_delta",
+        "text": "\n\nSome"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 20,
+      "delta": {
+        "type": "text_delta",
+        "text": " sources disagree on stor"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 20,
+      "delta": {
+        "type": "text_delta",
+        "text": "age. Several"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 20,
+      "delta": {
+        "type": "text_delta",
+        "text": " third-party pages and"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 20,
+      "delta": {
+        "type": "text_delta",
+        "text": " one"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 20,
+      "delta": {
+        "type": "text_delta",
+        "text": " Neon FAQ page"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 20,
+      "delta": {
+        "type": "text_delta",
+        "text": " say 0.5 GB"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 20,
+      "delta": {
+        "type": "text_delta",
+        "text": " per project."
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 20,
+      "delta": {
+        "type": "text_delta",
+        "text": " Ne"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 20,
+      "delta": {
+        "type": "text_delta",
+        "text": "on's pl"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 20,
+      "delta": {
+        "type": "text_delta",
+        "text": "ans page and its"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 20,
+      "delta": {
+        "type": "text_delta",
+        "text": " Free-plan lim"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 20,
+      "delta": {
+        "type": "text_delta",
+        "text": "its FAQ say 1"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 20,
+      "delta": {
+        "type": "text_delta",
+        "text": " GB,"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 20,
+      "delta": {
+        "type": "text_delta",
+        "text": " and"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 20,
+      "delta": {
+        "type": "text_delta",
+        "text": " a"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 20,
+      "delta": {
+        "type": "text_delta",
+        "text": " page"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 20,
+      "delta": {
+        "type": "text_delta",
+        "text": " from 10 days ago also"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 20,
+      "delta": {
+        "type": "text_delta",
+        "text": " says 1 GB. I"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 20,
+      "delta": {
+        "type": "text_delta",
+        "text": "'d go with "
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 20,
+      "delta": {
+        "type": "text_delta",
+        "text": "1 GB, but check"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 20,
+      "delta": {
+        "type": "text_delta",
+        "text": " Neon's pricing page before"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 20,
+      "delta": {
+        "type": "text_delta",
+        "text": " you r"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 20,
+      "delta": {
+        "type": "text_delta",
+        "text": "ely on it.\n\n**Sup"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 20,
+      "delta": {
+        "type": "text_delta",
+        "text": "abase"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 20,
+      "delta": {
+        "type": "text_delta",
+        "text": " Free plan:"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 20,
+      "delta": {
+        "type": "text_delta",
+        "text": "** I"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 20,
+      "delta": {
+        "type": "text_delta",
+        "text": " have"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 20,
+      "delta": {
+        "type": "text_delta",
+        "text": " no ver"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 20,
+      "delta": {
+        "type": "text_delta",
+        "text": "ified current"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 20,
+      "delta": {
+        "type": "text_delta",
+        "text": " figures. One result"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 20,
+      "delta": {
+        "type": "text_delta",
+        "text": ", a"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 20,
+      "delta": {
+        "type": "text_delta",
+        "text": " Neon-"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 20,
+      "delta": {
+        "type": "text_delta",
+        "text": "h"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 20,
+      "delta": {
+        "type": "text_delta",
+        "text": "osted third-party com"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 20,
+      "delta": {
+        "type": "text_delta",
+        "text": "parison, m"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 20,
+      "delta": {
+        "type": "text_delta",
+        "text": "entions "
+      }
+    },
+    {
+      "type": "content_block_stop",
+      "index": 20
+    },
+    {
+      "type": "content_block_start",
+      "index": 21,
+      "content_block": {
+        "citations": [],
+        "type": "text",
+        "text": ""
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 21,
+      "delta": {
+        "type": "citations_delta",
+        "citation": {
+          "type": "web_search_result_location",
+          "cited_text": "Neon now gives 1 GB per project, level with Render, Aiven and Koyeb and double the 500 MB on Supabase’s free plan.\n\n",
+          "url": "https://selfhost.dev/blog/neon-pricing-cost-of-serverless-postgres/",
+          "title": "Neon Pricing: The Honest Cost of Serverless Postgres",
+          "encrypted_index": "Eo8BCioIFRgCIiQ4MGE4NWIyYy1hY2NjLTQ4YzYtOWZmMS0yOTBiNjFlOTE5N2QSDHqzTR5XuTowt92G3hoMge44ENfOp1mBtpHOIjBaSM6rIg5/Fs1YYkyBi/6hjyp3exYOFDtv42DUUW/99mNVElbrgB94AT1fqSeww5wqEyXAUsurAHGI6oBH5vUG0xFQAtsYBA=="
+        }
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 21,
+      "delta": {
+        "type": "text_delta",
+        "text": "500 "
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 21,
+      "delta": {
+        "type": "text_delta",
+        "text": "MB on Supabase's"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 21,
+      "delta": {
+        "type": "text_delta",
+        "text": " free plan"
+      }
+    },
+    {
+      "type": "content_block_stop",
+      "index": 21
+    },
+    {
+      "type": "content_block_start",
+      "index": 22,
+      "content_block": {
+        "type": "text",
+        "text": ""
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 22,
+      "delta": {
+        "type": "text_delta",
+        "text": ". The"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 22,
+      "delta": {
+        "type": "text_delta",
+        "text": " same page says"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 22,
+      "delta": {
+        "type": "text_delta",
+        "text": " "
+      }
+    },
+    {
+      "type": "content_block_stop",
+      "index": 22
+    },
+    {
+      "type": "content_block_start",
+      "index": 23,
+      "content_block": {
+        "citations": [],
+        "type": "text",
+        "text": ""
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 23,
+      "delta": {
+        "type": "citations_delta",
+        "citation": {
+          "type": "web_search_result_location",
+          "cited_text": "Supabase pauses Free Plan projects after a period of inactivity and requires a manual unpause, while Neon's scale-to-zero resumes automatically on eve...",
+          "url": "https://neon.com/faqs/best-free-low-cost-managed-postgres-services",
+          "title": "What are the best free or low-cost managed Postgres services for side projects that scale automatically when traffic picks up? - Neon FAQs",
+          "encrypted_index": "Eo8BCioIFRgCIiQ4MGE4NWIyYy1hY2NjLTQ4YzYtOWZmMS0yOTBiNjFlOTE5N2QSDMLRxQnbEL22YE+4DhoM4ZHuTlogYQFzWmEWIjDpbaixPeTJ95Hh1U6tyC/Afe9aOTC3iu2GVkihlvvBwpVSkDrt4F4ilMcETBDPLFQqE37kYKnvlSslxiWbD5emTAd5otgYBA=="
+        }
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 23,
+      "delta": {
+        "type": "text_delta",
+        "text": "Supabase p"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 23,
+      "delta": {
+        "type": "text_delta",
+        "text": "auses Free Plan proj"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 23,
+      "delta": {
+        "type": "text_delta",
+        "text": "ects after a period of inactiv"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 23,
+      "delta": {
+        "type": "text_delta",
+        "text": "ity and requires a manual un"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 23,
+      "delta": {
+        "type": "text_delta",
+        "text": "pause"
+      }
+    },
+    {
+      "type": "content_block_stop",
+      "index": 23
+    },
+    {
+      "type": "content_block_start",
+      "index": 24,
+      "content_block": {
+        "type": "text",
+        "text": ""
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 24,
+      "delta": {
+        "type": "text_delta",
+        "text": "."
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 24,
+      "delta": {
+        "type": "text_delta",
+        "text": " Both come"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 24,
+      "delta": {
+        "type": "text_delta",
+        "text": " from a source with"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 24,
+      "delta": {
+        "type": "text_delta",
+        "text": " an"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 24,
+      "delta": {
+        "type": "text_delta",
+        "text": " interest in the"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 24,
+      "delta": {
+        "type": "text_delta",
+        "text": " comparison, so check"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 24,
+      "delta": {
+        "type": "text_delta",
+        "text": " sup"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 24,
+      "delta": {
+        "type": "text_delta",
+        "text": "abase.com/pricing"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 24,
+      "delta": {
+        "type": "text_delta",
+        "text": "."
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 24,
+      "delta": {
+        "type": "text_delta",
+        "text": " I"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 24,
+      "delta": {
+        "type": "text_delta",
+        "text": " can search"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 24,
+      "delta": {
+        "type": "text_delta",
+        "text": " for"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 24,
+      "delta": {
+        "type": "text_delta",
+        "text": " Supabase again if you "
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 24,
+      "delta": {
+        "type": "text_delta",
+        "text": "ask in"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 24,
+      "delta": {
+        "type": "text_delta",
+        "text": " a new message"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 24,
+      "delta": {
+        "type": "text_delta",
+        "text": "."
+      }
+    },
+    {
+      "type": "content_block_stop",
+      "index": 24
+    },
+    {
+      "type": "message_delta",
+      "delta": {
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "container": null
+      },
+      "usage": {
+        "input_tokens": 15636,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "output_tokens": 899,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "server_tool_use": {
+          "web_search_requests": 1,
+          "web_fetch_requests": 0
+        }
+      }
+    },
+    {
+      "type": "message_stop"
+    }
+  ],
+  "finalMessage": {
+    "model": "claude-sonnet-5-5",
+    "id": "msg_011CgvZhCCaVy3BhA7TdTSYJ",
+    "type": "message",
+    "role": "assistant",
+    "content": [
+      {
+        "type": "server_tool_use",
+        "id": "srvtoolu_01RN37LCKKiFFjAVXVpeMpXA",
+        "name": "web_search",
+        "input": {
+          "query": "Neon Postgres free plan limits pricing"
+        }
+      },
+      {
+        "type": "server_tool_use",
+        "id": "srvtoolu_01KtZo7oghcNPzf6SujXqsds",
+        "name": "web_search",
+        "input": {
+          "query": "Supabase free plan limits pricing"
+        }
+      },
+      {
+        "type": "web_search_tool_result",
+        "tool_use_id": "srvtoolu_01RN37LCKKiFFjAVXVpeMpXA",
+        "content": [
+          {
+            "type": "web_search_result",
+            "title": "Neon plans - Neon Docs",
+            "url": "https://neon.com/docs/introduction/plans",
+            "encrypted_content": "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",
+            "page_age": "6 days ago"
+          },
+          {
+            "type": "web_search_result",
+            "title": "What are the limits and quotas for Neon's Free plan? - Neon FAQs",
+            "url": "https://neon.com/faqs/free-plan-limits-and-quotas",
+            "encrypted_content": "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",
+            "page_age": "7 days ago"
+          },
+          {
+            "type": "web_search_result",
+            "title": "What are the best free or low-cost managed Postgres services for side projects that scale automatically when traffic picks up? - Neon FAQs",
+            "url": "https://neon.com/faqs/best-free-low-cost-managed-postgres-services",
+            "encrypted_content": "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",
+            "page_age": null
+          },
+          {
+            "type": "web_search_result",
+            "title": "Neon - Features, Pricing & Alternatives",
+            "url": "https://www.srvrlss.io/provider/neon/",
+            "encrypted_content": "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",
+            "page_age": "48 days ago"
+          },
+          {
+            "type": "web_search_result",
+            "title": "Neon Pricing: The Honest Cost of Serverless Postgres",
+            "url": "https://selfhost.dev/blog/neon-pricing-cost-of-serverless-postgres/",
+            "encrypted_content": "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",
+            "page_age": "10 days ago"
+          },
+          {
+            "type": "web_search_result",
+            "title": "Neon Pricing 2026: Plans, Limits & Changes",
+            "url": "https://www.saaspricepulse.com/tools/neon",
+            "encrypted_content": "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",
+            "page_age": "369 days ago"
+          },
+          {
+            "type": "web_search_result",
+            "title": "Neon Postgres Review 2026: Features, Pricing & Limits",
+            "url": "https://codewithsql.com/cloud-databases/postgresql/neon",
+            "encrypted_content": "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",
+            "page_age": null
+          },
+          {
+            "type": "web_search_result",
+            "title": "Neon Serverless Postgres Pricing 2026: Complete Breakdown &…",
+            "url": "https://vela.run/articles/neon-serverless-postgres-pricing-2026/",
+            "encrypted_content": "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",
+            "page_age": "141 days ago"
+          },
+          {
+            "type": "web_search_result",
+            "title": "Neon - Data Storage",
+            "url": "https://datastorage.com/cloud_providers/neon/",
+            "encrypted_content": "EswJCioIFRgCIiQ4MGE4NWIyYy1hY2NjLTQ4YzYtOWZmMS0yOTBiNjFlOTE5N2QSDGv8mU6aNggftmkezhoMuyBNOsu3MRfjnu5BIjCZ7WYQ9LiATKxhdghJTm6y0VngsNlnhTpRZqCRg9MbOmi1t2K6GIccr3NBJJU8S+oqzwiYvP5NJrN67/xYMm78xNH7ZpJNcWndw3/GWWJyuwENhtQKNh9eA2q7xZCl50YCJPRJmWvt2lqoZQ9sPzoCAvN20x7dRQlUZm5Q1LLfGWF4BSaDMqePnBpvsIzPBqF1O73odMaDU78avPQaw3D0bo35eCYsNkl1POCr7dNeo+AfdLo4naMqHrjSQts1iR5T7NYfwo7/lWLshz4sx5ACB5sH+GTXzD8BQraHx4Y4YwrnSRO3FlYi+Gc7T3fLLr6TKSB+E36p7yprVEfgjYmCjPOBDFcjFYUJZVmnD9dIg2BPbhx0QsFhnGkf8LnuahQIPg8UtsKDX5gLhexpkgb6wbhRVT5VryTZFdZw8OXr0en1ZxMjzTZTYa1EpOXmWHUqzKOkMZMqpc52ahgShotA+Aa/16aNljbfugmYqINBEUAXT81hCEcnGC2TXZz6TaCgAMPxQe1m3DXPGJC9HY8+b3+IUFbjj6I6r/nAzyckf4+JgwdQWaPP3Z5zAoZIbGxrZuGRZSPwMVjR/coMuHXCs7i1LIozXRI/4WcNZo0QfJcp7UEY4M5f1gIwOCEwon9mZCR1/pOZweLldcNX5x+Dlm/vgM5e4osHr0V+PDZRmFeIzwcQsVGe/Olt+x6Sx1MsfTXJdPCtqgC2Nyy2S6+FdWD6ku2ofctDuqFf/zty+3LETRTE71vKGFUdP9t/oEQMMRpPfmvloafjSyL4dRlX195XQNGn20qz19hWZqoL/37xTlbW9QmXMiQQtB8B7DsFF68X1S8b8VyTn/NBTVsCeP7Dps25G0oQLGQRacEiU/iVwLx2CxJaKqF/OY5/MU3hKp0qPg9v5MlPQeVYymDXFgWcqFxvc2AIlrQMsXi3crLVHraF/5C+CwMSLwclhbFawW77HwOo28BRyGVJSelUKOqEI2XqcV6CT3FZUOa/x+W/hnvmn2xXI7yUhfU9eIJ8GnbR8wHN9ckDkRO10i8tNkwKc3mMyODf9vPlf9tC+8jEN43EZZTKWyizxc/DTqFJyMuObcUxXdxSWP83KwIpJz10bKDX5D4v7hHjFu1S6mXUcHOvXXdT3Fi8hQBkprZ+Mk+fbu2Td0FVXSWSf9Q78oqtMttQAXnKgyYF6cEcfdLySVe79rZUVu1iyZR96E83FTcSq5xwxKtMcBbZlmNY3pyfHPunGf4bU1BvHz5dICfLgLh2UtCXr38BLgzu4PRScfLvyKCg9VzACtsaLgWWrEpZneg+sPI3uI6YJUOoAO+8Ay1WBds01qeeseUGbeDE2a4IDsyaOgphDdVbUBDVBMsnHTCx3LTPvxCToPKhI87+26eNRDA1lcrFfpxNlm0Cb9Er384BDcXC6lXoNkZL3rD7iZ5ZzHVB2getl+BnZ2yMyTzfz5XCa4u5XablnQd8ZbNZLL10h3byR9j4XbIIM5pekYiIrXpOTYtjXmqSHv9ZuzifiwepgDZ8RqUVdSVjUxgD",
+            "page_age": "147 days ago"
+          }
+        ],
+        "caller": {
+          "type": "direct"
+        }
+      },
+      {
+        "type": "web_search_tool_result",
+        "tool_use_id": "srvtoolu_01KtZo7oghcNPzf6SujXqsds",
+        "content": {
+          "type": "web_search_tool_result_error",
+          "error_code": "max_uses_exceeded"
+        },
+        "caller": {
+          "type": "direct"
+        }
+      },
+      {
+        "type": "text",
+        "text": "I could only get results for Neon. The Supabase search failed because of a search limit, so I can't give you current Supabase details from a source.\n\n**Neon Free plan (as of 11 November 2026)**\n\nNeon's own docs and FAQ, both updated within the last week, list these allowances:\n- **Price:** "
+      },
+      {
+        "citations": [
+          {
+            "type": "web_search_result_location",
+            "cited_text": "The Neon Free plan costs $0/month and includes 100 projects, 10 branches per project, 100 CU-hours of compute per project per month, 1 GB of Postgres ...",
+            "url": "https://neon.com/faqs/free-plan-limits-and-quotas",
+            "title": "What are the limits and quotas for Neon's Free plan? - Neon FAQs",
+            "encrypted_index": "Eo8BCioIFRgCIiQ4MGE4NWIyYy1hY2NjLTQ4YzYtOWZmMS0yOTBiNjFlOTE5N2QSDGCJQgEBUGxYKTX3yRoMgJn6BYCb5gfpZGyEIjAMp+Iaq/VzBYPl+i8t8q1H8vVAhYJ9RapZaAfjxPyjOgR8++LvSxn96PnFUuVeh/IqE7a9YZ4fSnBFnn+DXOjZ3ItFKgAYBA=="
+          }
+        ],
+        "type": "text",
+        "text": "$0/month"
+      },
+      {
+        "type": "text",
+        "text": ".\n- **Projects and branches:** "
+      },
+      {
+        "citations": [
+          {
+            "type": "web_search_result_location",
+            "cited_text": "The Neon Free plan costs $0/month and includes 100 projects, 10 branches per project, 100 CU-hours of compute per project per month, 1 GB of Postgres ...",
+            "url": "https://neon.com/faqs/free-plan-limits-and-quotas",
+            "title": "What are the limits and quotas for Neon's Free plan? - Neon FAQs",
+            "encrypted_index": "Eo8BCioIFRgCIiQ4MGE4NWIyYy1hY2NjLTQ4YzYtOWZmMS0yOTBiNjFlOTE5N2QSDKyvEODv4f962jVZCRoMUyAFyDax9Z513LCxIjDgyJKDkv2ZLF2r6qKfYqd1A818w047tiD0HpRWwPyWuH9fCMDogH5DjUFic6/NQlYqE77NNPGhNNYpQTm7yJHZu0NDwoMYBA=="
+          }
+        ],
+        "type": "text",
+        "text": "100 projects, with 10 branches per project"
+      },
+      {
+        "type": "text",
+        "text": ".\n- **Compute:** "
+      },
+      {
+        "citations": [
+          {
+            "type": "web_search_result_location",
+            "cited_text": "The Neon Free plan costs $0/month and includes 100 projects, 10 branches per project, 100 CU-hours of compute per project per month, 1 GB of Postgres ...",
+            "url": "https://neon.com/faqs/free-plan-limits-and-quotas",
+            "title": "What are the limits and quotas for Neon's Free plan? - Neon FAQs",
+            "encrypted_index": "Eo8BCioIFRgCIiQ4MGE4NWIyYy1hY2NjLTQ4YzYtOWZmMS0yOTBiNjFlOTE5N2QSDDOh6GutaRl2puWavxoM8OoYA/wfwTrmRYgoIjBlJUXwsKs/1xNZWOx8pr2J/bYNNDSefjXN6J7DLjltdNwrkaSAHK1xIyZKB5xWMaoqE1Hy2nxV0ao6OMiw5QyBhYV1xJsYBA=="
+          }
+        ],
+        "type": "text",
+        "text": "100 CU-hours per project per month"
+      },
+      {
+        "type": "text",
+        "text": ". "
+      },
+      {
+        "citations": [
+          {
+            "type": "web_search_result_location",
+            "cited_text": "Computes scale to zero after 5 minutes of inactivity and can scale up to 2 CU (≈8 GB RAM) when active.\n\n",
+            "url": "https://neon.com/faqs/free-plan-limits-and-quotas",
+            "title": "What are the limits and quotas for Neon's Free plan? - Neon FAQs",
+            "encrypted_index": "Eo8BCioIFRgCIiQ4MGE4NWIyYy1hY2NjLTQ4YzYtOWZmMS0yOTBiNjFlOTE5N2QSDFVnOTt+SGBeRAUlhBoMMUcAO5M6Lt2U5uG2IjCmE69xrk8CiRFD1WIqo2mXFoO3rHp/GRDuvRLy+814GZnqLSxVnvJOKb3rKsUA9ncqE4NBueRTVtR8IzUJjx2v4Uj5P/4YBA=="
+          }
+        ],
+        "type": "text",
+        "text": "Computes scale to zero after 5 minutes of inactivity and can scale up to 2 CU (about 8 GB RAM) when active."
+      },
+      {
+        "type": "text",
+        "text": "\n- **Storage:** "
+      },
+      {
+        "citations": [
+          {
+            "type": "web_search_result_location",
+            "cited_text": "** The Free plan is limited to 1 GB of Postgres storage per project, and to 20 GB in total across all your projects. ",
+            "url": "https://neon.com/docs/introduction/plans",
+            "title": "Neon plans - Neon Docs",
+            "encrypted_index": "Eo8BCioIFRgCIiQ4MGE4NWIyYy1hY2NjLTQ4YzYtOWZmMS0yOTBiNjFlOTE5N2QSDDeNnOrLq/Yczw42HxoMZmg/k/TvlghTQTCJIjBhhGTMrFp4jKWlSQpN6hu3Ip9JM4oF1uJN1OZauYvRhJaDQ04bR/FdANw52F8zinsqE4+5JMWiju3Stv9xvSTeuJGpW+0YBA=="
+          }
+        ],
+        "type": "text",
+        "text": "1 GB of Postgres storage per project, and 20 GB in total across all your projects."
+      },
+      {
+        "type": "text",
+        "text": "\n- **Network transfer:** "
+      },
+      {
+        "citations": [
+          {
+            "type": "web_search_result_location",
+            "cited_text": "The Neon Free plan costs $0/month and includes 100 projects, 10 branches per project, 100 CU-hours of compute per project per month, 1 GB of Postgres ...",
+            "url": "https://neon.com/faqs/free-plan-limits-and-quotas",
+            "title": "What are the limits and quotas for Neon's Free plan? - Neon FAQs",
+            "encrypted_index": "Eo8BCioIFRgCIiQ4MGE4NWIyYy1hY2NjLTQ4YzYtOWZmMS0yOTBiNjFlOTE5N2QSDHeiuRtbYfenu2ZqARoMXSz4raSbQ49rsKVBIjCfsQfCSsIQUnGMOXrC/NuIBqijdBoptS6u7nHrgIP3fSuyATTPxwDJ5L310F0e9cYqE3qGt9JEasr033R11lO/EDt6w6gYBA=="
+          }
+        ],
+        "type": "text",
+        "text": "5 GB of public network transfer per project per month"
+      },
+      {
+        "type": "text",
+        "text": ".\n- **Restore window:** "
+      },
+      {
+        "citations": [
+          {
+            "type": "web_search_result_location",
+            "cited_text": "## Neon free plan limits\n| Limit | Free plan |\n| --- | --- |\n| Projects | 100 |\n| Compute | 100 CU-hours per project per month, autoscaling up to 2 CU...",
+            "url": "https://codewithsql.com/cloud-databases/postgresql/neon",
+            "title": "Neon Postgres Review 2026: Features, Pricing & Limits",
+            "encrypted_index": "Eo8BCioIFRgCIiQ4MGE4NWIyYy1hY2NjLTQ4YzYtOWZmMS0yOTBiNjFlOTE5N2QSDBrsJk898LSYZq6DRRoMEaJrDkgGRHDw/B3mIjCzI138yFDnJ9VN5Gyl/59uGGNy/XZrmULUhRTsiHwIKisK5ZKJlc+dEQEb6e0a+I8qE9bIF6ePACTVvLK0G8BAUU9oCzcYBA=="
+          }
+        ],
+        "type": "text",
+        "text": "6 hours, capped at 1 GB of change history"
+      },
+      {
+        "type": "text",
+        "text": ". This figure comes from a third-party review.\n- **Overages:** "
+      },
+      {
+        "citations": [
+          {
+            "type": "web_search_result_location",
+            "cited_text": "Neon does not bill overages on the Free plan.\n\n",
+            "url": "https://neon.com/faqs/free-plan-limits-and-quotas",
+            "title": "What are the limits and quotas for Neon's Free plan? - Neon FAQs",
+            "encrypted_index": "Eo8BCioIFRgCIiQ4MGE4NWIyYy1hY2NjLTQ4YzYtOWZmMS0yOTBiNjFlOTE5N2QSDFXI0BvoihtambaeyhoMqaiZz+71wxDQ18vXIjCD4Ls4/xL55d4kuS12wKya1UPuoKgy6Qx04Mf+QuFqk1GjPixBRddBUx34CWhIBIgqE/C80150jOvKBI4PSep45MOskhsYBA=="
+          }
+        ],
+        "type": "text",
+        "text": "Neon does not bill overages on the Free plan."
+      },
+      {
+        "type": "text",
+        "text": " Writes that would grow storage past the cap fail until you free space or upgrade.\n\nSome sources disagree on storage. Several third-party pages and one Neon FAQ page say 0.5 GB per project. Neon's plans page and its Free-plan limits FAQ say 1 GB, and a page from 10 days ago also says 1 GB. I'd go with 1 GB, but check Neon's pricing page before you rely on it.\n\n**Supabase Free plan:** I have no verified current figures. One result, a Neon-hosted third-party comparison, mentions "
+      },
+      {
+        "citations": [
+          {
+            "type": "web_search_result_location",
+            "cited_text": "Neon now gives 1 GB per project, level with Render, Aiven and Koyeb and double the 500 MB on Supabase’s free plan.\n\n",
+            "url": "https://selfhost.dev/blog/neon-pricing-cost-of-serverless-postgres/",
+            "title": "Neon Pricing: The Honest Cost of Serverless Postgres",
+            "encrypted_index": "Eo8BCioIFRgCIiQ4MGE4NWIyYy1hY2NjLTQ4YzYtOWZmMS0yOTBiNjFlOTE5N2QSDHqzTR5XuTowt92G3hoMge44ENfOp1mBtpHOIjBaSM6rIg5/Fs1YYkyBi/6hjyp3exYOFDtv42DUUW/99mNVElbrgB94AT1fqSeww5wqEyXAUsurAHGI6oBH5vUG0xFQAtsYBA=="
+          }
+        ],
+        "type": "text",
+        "text": "500 MB on Supabase's free plan"
+      },
+      {
+        "type": "text",
+        "text": ". The same page says "
+      },
+      {
+        "citations": [
+          {
+            "type": "web_search_result_location",
+            "cited_text": "Supabase pauses Free Plan projects after a period of inactivity and requires a manual unpause, while Neon's scale-to-zero resumes automatically on eve...",
+            "url": "https://neon.com/faqs/best-free-low-cost-managed-postgres-services",
+            "title": "What are the best free or low-cost managed Postgres services for side projects that scale automatically when traffic picks up? - Neon FAQs",
+            "encrypted_index": "Eo8BCioIFRgCIiQ4MGE4NWIyYy1hY2NjLTQ4YzYtOWZmMS0yOTBiNjFlOTE5N2QSDMLRxQnbEL22YE+4DhoM4ZHuTlogYQFzWmEWIjDpbaixPeTJ95Hh1U6tyC/Afe9aOTC3iu2GVkihlvvBwpVSkDrt4F4ilMcETBDPLFQqE37kYKnvlSslxiWbD5emTAd5otgYBA=="
+          }
+        ],
+        "type": "text",
+        "text": "Supabase pauses Free Plan projects after a period of inactivity and requires a manual unpause"
+      },
+      {
+        "type": "text",
+        "text": ". Both come from a source with an interest in the comparison, so check supabase.com/pricing. I can search for Supabase again if you ask in a new message."
+      }
+    ],
+    "container": null,
+    "stop_reason": "end_turn",
+    "stop_sequence": null,
+    "stop_details": null,
+    "usage": {
+      "input_tokens": 15636,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 0
+      },
+      "output_tokens": 899,
+      "service_tier": "standard",
+      "inference_geo": "global",
+      "speed": "standard",
+      "server_tool_use": {
+        "web_search_requests": 1,
+        "web_fetch_requests": 0
+      },
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      }
+    },
+    "diagnostics": null,
+    "parsed_output": null
+  }
+}

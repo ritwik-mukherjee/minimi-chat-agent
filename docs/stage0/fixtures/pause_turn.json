@@ -1,0 +1,576 @@
+{
+  "note": "Hand-written in Stage 0 from ordinary_two_searches.json: cut after the last search result, stop_reason set to pause_turn. No real pause_turn was produced (Q3d).",
+  "events": [
+    {
+      "type": "message_start",
+      "message": {
+        "model": "claude-sonnet-5-5",
+        "id": "msg_011CgvZgSxK839vXW7wKyHfJ",
+        "type": "message",
+        "role": "assistant",
+        "content": [],
+        "container": null,
+        "stop_reason": null,
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 3750,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 16,
+          "service_tier": "standard",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    },
+    {
+      "type": "content_block_start",
+      "index": 0,
+      "content_block": {
+        "type": "server_tool_use",
+        "id": "srvtoolu_01SrfT7XVZFroEummUR2SqLT",
+        "name": "web_search",
+        "input": {}
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 0,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": ""
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 0,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": "{\"query"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 0,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": "\": \"Neo"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 0,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": "n Postg"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 0,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": "res fre"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 0,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": "e plan "
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 0,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": "limits "
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 0,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": "pricing"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 0,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": "\"}"
+      }
+    },
+    {
+      "type": "content_block_stop",
+      "index": 0
+    },
+    {
+      "type": "content_block_start",
+      "index": 1,
+      "content_block": {
+        "type": "server_tool_use",
+        "id": "srvtoolu_01CPy8qhjSTZsN9ZqBr1rUgV",
+        "name": "web_search",
+        "input": {}
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 1,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": ""
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 1,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": "{\"query"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 1,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": "\": \"Sup"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 1,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": "abase f"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 1,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": "ree pla"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 1,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": "n limit"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 1,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": "s prici"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 1,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": "ng\"}"
+      }
+    },
+    {
+      "type": "content_block_stop",
+      "index": 1
+    },
+    {
+      "type": "content_block_start",
+      "index": 2,
+      "content_block": {
+        "type": "web_search_tool_result",
+        "tool_use_id": "srvtoolu_01SrfT7XVZFroEummUR2SqLT",
+        "content": [
+          {
+            "type": "web_search_result",
+            "title": "Neon plans - Neon Docs",
+            "url": "https://neon.com/docs/introduction/plans",
+            "encrypted_content": "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",
+            "page_age": "6 days ago"
+          },
+          {
+            "type": "web_search_result",
+            "title": "What are the limits and quotas for Neon's Free plan? - Neon FAQs",
+            "url": "https://neon.com/faqs/free-plan-limits-and-quotas",
+            "encrypted_content": "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",
+            "page_age": "7 days ago"
+          },
+          {
+            "type": "web_search_result",
+            "title": "What are the best free or low-cost managed Postgres services for side projects that scale automatically when traffic picks up? - Neon FAQs",
+            "url": "https://neon.com/faqs/best-free-low-cost-managed-postgres-services",
+            "encrypted_content": "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",
+            "page_age": null
+          },
+          {
+            "type": "web_search_result",
+            "title": "Neon - Features, Pricing & Alternatives",
+            "url": "https://www.srvrlss.io/provider/neon/",
+            "encrypted_content": "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",
+            "page_age": "48 days ago"
+          },
+          {
+            "type": "web_search_result",
+            "title": "Neon Pricing: The Honest Cost of Serverless Postgres",
+            "url": "https://selfhost.dev/blog/neon-pricing-cost-of-serverless-postgres/",
+            "encrypted_content": "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",
+            "page_age": "10 days ago"
+          },
+          {
+            "type": "web_search_result",
+            "title": "Neon Pricing 2026: Plans, Limits & Changes",
+            "url": "https://www.saaspricepulse.com/tools/neon",
+            "encrypted_content": "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",
+            "page_age": "369 days ago"
+          },
+          {
+            "type": "web_search_result",
+            "title": "Neon Postgres Review 2026: Features, Pricing & Limits",
+            "url": "https://codewithsql.com/cloud-databases/postgresql/neon",
+            "encrypted_content": "ErANCioIFRgCIiQ4MGE4NWIyYy1hY2NjLTQ4YzYtOWZmMS0yOTBiNjFlOTE5N2QSDNyeb9SnEvD/GDimhhoMRkNe0HK8B6yPlDTZIjAWgUehSHx+TcDAwyrRWIGNm0Cg4VgPyrOG/uG151CjS+E8WNhHxspTcunyw6pbymwqswyPRFzRy30aNAgKqvk+OixMlXR4/g7SjpcHqPm5u7yFKlfEP4Ksp/UXRi0LYNvn/Tn6IHyWCgm9lHghaZM2YP4PW+IVHScCqhEHqj3YvWFkjh2O435Gx/aq+lgVXgKj/4CCfWVY6w+OyIFA1Vi/86VX6FtE4DUsRg2JToyRZFbZQvnW6g/DNXypk43/lQuhb5OYLAijbKUuGoZquuPUZcEfXImRqz6iF2LrM5VW8OKo5Fok2xZe0mFEjN2dj7WR7InDoBeV57qVE0gCo1dUvaUryHroiBOus4qDGMd6ZjnESjXJ3iMx6/YwKQJTUJxueJzMuKntpvmQHH7RpGiFlirVlZ7X9na2tk//b5U12qEnb2lzoA6eaBZLgO2Yt8txi/13yOz6E3/B8xut5gGyV6+jj/+ymb7ST9udP10SYWd59jF7PaO0vEA5tjjepREznexTa0j9LgZRzIsAA+wjS0TMC9Qin4cCY7nyTxpeCb8n2M5k2giigVhEOUdivry3aDClDIA+aeoIllwxM+P8e83PNJGLBLBoOB6uwaZJhHi4KWTNs9Nh34oJelZqugulit5452Xeo66txlu1yk5Z/1eGEtb4X8dSca7mC0eGJQW5wPCT902rYRxD23jt5QmqLlj89+YelSjWhVlL3fD+M/DWaJsB1b9ZxxbREWtqmxHTYnMf0xdvVlC3qDzb1EEovlUXASbJCw/jKeDzSCTbKyP5gnAOM+gXWeC2l0cLgXpYHj40EETcxKs6A8CixSncmUAF33uAbTvfbqfs3bPV5CXGW9Y5DXN6pgt0D2lAkphU2EkXS9uRzXRnGmp+/0Lg27riGlfU7nh6Sy5Ok1dwnukz+Ga9eCRYQtbUpbyvXRVQ4QF0r7yj4OInn4VVOEtE/I4t2IbMcohD2TJvzKSFSOpi8UA+unFtvFjM6r9sJBnI2Anpzx7M38b3Okgdb6p2CINX17kUpd2uzzBM+qdgIfs56GvSfBVwygf7XMUi2JjjI19QghK2N9UX1guAA7untKVOE5zcFc5CMC0kBcVvzOJrNzj/I3/P2k444NqhoUUIT5jDn5kSWEsXDpeF1zYiPqxGK3DmvQkEgSvcf2jdeL1FkvVmjSe97sKMUwclWY3TzEo+wpan1Yf4m7u+2AUZi6/n+1ciBlweKPeaPuDwioM61aXLUMlzqE9h0kMqCdBxanIhF0bNPGHsqHAnAQjvk/bAMCpJ339L8TzUHR3yGzQtZZjt0Qx/2UUr7Ly4CaukAct+LFJui2rGAT5bi6pb2LvpzNS1Ibk9L20kzCjNaVWt6z6xi+JduQDf20Un36+z0ICM5LmqkMYLl04nSwI4c4/8GEVM/iMWOhUbRLFzKv5pRLW6SAAlvNmblPK/UJlP/VWmMOEupfhjWJRRT+tLlNRsKqblcbsIKwiHICPFCEtdELggn5y/aiCZWIUcUlkAgFJwvaU4SjZ6AuS4LktIh5B8SqfTFZfcwSUHlxy0eWE+spfP8pK26lwvA9Ic4BBIllx4UAzraT5zn59fXx+R3epQDWXSIq7dHw+WDVB7ytXEmMTXA/X3rfKY6L6RsR+6C8dhHIQ9scqCLDjDIo1VhUeJvtKLonecu3nD1YSMOU9dZeY3lr3Hm1PTTFXcMjy5ua+nfAEuQ+Vt9ZT8QCxkf6akhp2EiBk6hPxnnfzbRyY8vzzj2Ap0aPVqrVODGq5WnW6K3c0EDcwmR1cmWhAr/1008F2eckOopZvvHjmvRZzOu78X009nLuaVcOQCSEQY7TLZjRxzo0FbJXOAh/Q1xQYI6mJzw4OLBtPUVDnUeUfT9vc7G53jo8s2zmQlzYkvr+vayQL2xUqegLEt/gRtMIb7/hcyPk/z3P3atweWxVHzXdnT0wZDJ2xT68Rqd4CYZkOIzpjjKbavUKmiwG40Uh9pjlj9k+O1IWNJF//c79TWteHVaOMbPmOYHS0RSZAY5NordnXuBy5lhM+6YLfh/L4+anY1sBYy7hEt4pfKOaSo8AifdW9LR+xMNM2OmkF13oMo2PRr8zmBz/BPAPWgsJpvQPDlU0CLmHTxiiHkMPPHfUkcfE68oFLMDjvCvM6vzUvjBSk3wPVQL6lh+soV3p6fcusYAw==",
+            "page_age": null
+          },
+          {
+            "type": "web_search_result",
+            "title": "Neon Serverless Postgres Pricing 2026: Complete Breakdown &…",
+            "url": "https://vela.run/articles/neon-serverless-postgres-pricing-2026/",
+            "encrypted_content": "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",
+            "page_age": "141 days ago"
+          },
+          {
+            "type": "web_search_result",
+            "title": "Neon - Data Storage",
+            "url": "https://datastorage.com/cloud_providers/neon/",
+            "encrypted_content": "EswJCioIFRgCIiQ4MGE4NWIyYy1hY2NjLTQ4YzYtOWZmMS0yOTBiNjFlOTE5N2QSDEQNmFtRsVaQ76sukBoMtXLMyKZzfuMPfvZtIjB6IeYkuJs4k1rVIsAbEgW00qd3mRdT7sHV84+imJNX/vje3yy69w+fWYMwOHexVYEqzwiPxxuBHvS/hToSuurwWQs1P5yndVyPJ50pG+NR9ZF7YoryTfNxVkgyYdowm/oF3Zn3haI8E/ZsI6gZ6mAyIfolW1r+dy9G0ziKkPzvK3Fh6YWaj0/vfkYuWiPyCdI1ZP49qjWat3vFv+kJRbHe2cCO/hysMtpq749NxJmwV182fMk1ydE7Gx7kKX0QKsQeT3PWbgNXr5jikRymt6zloPaqowZd+yaVBzAN/Jhw+HuzXHdK4JLaUhek4PqJBZR03AfL3PytHrsBeYDsLH5Z73oWUB5sczzyI42F1KWnP7S0DVA99DTW/S5hZmHoR8t2pnhg5mbbHiYYSSR6zeFavUUVDU4LebaOJriFzoWc1z5j3I3EGjUPbNzFN6R5DO04Mxmyykknc78XfhOZj3Sw3vOpPfZmP2L1OoIp+X6AHKQiTfvNofhTR/HfNNC1N7zROsbCwQucRI1uf5s7Ce0KrBSjKS9bQZPm2e65rYG+yFioosMAVAnizjB+8QcKOMiZZomA73Yq3E39B7fAAcBBZFoVKCd2rTOAcZV0dvTubjM1lv2yBssUM5uWgBH2UUoTxep3bWTR6NICaijMLemIwpO7veWgsaX7zEbGsBm57AcacLRJYZg6Phog57NoAJINEHzYHjhj+GwT0fmaIqfDudy19HDfDujZZLX6ypZcUZNPwiTWhWetHUwi5NAQX/c9lNtSN5F7OB+wZ85Q74Tl+PsQYRTEApxqCm+8sWio9goX72S1J2PMBQhnQ44gQJCN0CDTvLkDYTv4bNvxvInlX5nIHZzSFFPsSQ9oezQOGyH8isopSTfNZ4l++EFSR0QFa5WldnPOY/HEyrQhCdnHgloKEU/i/SYvDl8S+pNnMGOpweT+ZJ2iiomUHA254NJoO08AtuP+s8I0jeDgPv9aGmg6cZQ8eNMCBdV8e55rPEoD5gviDZPEOX71KSOYz4GrYKCBhkEzOh4yqhC6Ovv4zRb9wxS7iiAeG8USeAJWwzlIycPULM2tzviWBYtQ6vzErgme2WTb2GEwy5OtlIzp4to4P/1Rutsfl9/pETQ8nvgcOBUdv/GxboCAeqQXZMKnkCJ+5jKJehRNpMrjzPSbDBn7DsjZPo5MHGBZj/rRk8DuLXaUCCIPZKdMBqktoPByj8/uUupv/r7WG38KjFaUYo0nLapgOvnLV2uX/e11cUvFaczW8+8UBetGBogbXct9+ebz5prg+7hfra3NgOx/O+JkH77oNcgu7wo/H1pw2dMjQFfpx9hfys4ferQbni3clLWDKks0YkS4WNG1K5rOXRFpO7yuKNbnEbflF0fTqxRPpAqNJYuixXw/buUL/EZx/lypOpWlt0DKxUFI/aopviCHKyxMw7QiiaH2sB7kwhg9KLHJhpoOO0WQmbpbasYhimqj5MIbi8fIsaMLIgVQfBq0qEY6uIbSeH9oob8jhUdrgQ8dxSz4QUktv0j/kKDaORgD",
+            "page_age": "147 days ago"
+          }
+        ],
+        "caller": {
+          "type": "direct"
+        }
+      }
+    },
+    {
+      "type": "content_block_stop",
+      "index": 2
+    },
+    {
+      "type": "content_block_start",
+      "index": 3,
+      "content_block": {
+        "type": "web_search_tool_result",
+        "tool_use_id": "srvtoolu_01CPy8qhjSTZsN9ZqBr1rUgV",
+        "content": [
+          {
+            "type": "web_search_result",
+            "title": "Supabase Pricing: 2026 Guide to Plans, Limits, and Real-World Costs",
+            "url": "https://www.jetadmin.io/blog/supabase-pricing-2026-guide-to-plans-limits-and-real-world-costs/",
+            "encrypted_content": "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",
+            "page_age": "46 days ago"
+          },
+          {
+            "type": "web_search_result",
+            "title": "Supabase Pricing: Free Tier Limits, Pro Costs & Egress",
+            "url": "https://www.activepieces.com/blog/supabase-pricing-free-tier-limits-pro-costs-egress",
+            "encrypted_content": "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",
+            "page_age": "15 days ago"
+          },
+          {
+            "type": "web_search_result",
+            "title": "Supabase pricing: plans, free tier limits, and the bills AI is quietly creating",
+            "url": "https://www.cloudzero.com/blog/supabase-pricing/",
+            "encrypted_content": "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",
+            "page_age": "75 days ago"
+          },
+          {
+            "type": "web_search_result",
+            "title": "Supabase Pricing in 2026: What You'll Actually Pay (with Calculator)",
+            "url": "https://makerkit.dev/blog/saas/supabase-pricing",
+            "encrypted_content": "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",
+            "page_age": "135 days ago"
+          },
+          {
+            "type": "web_search_result",
+            "title": "Supabase Pricing 2026: Real Costs Exposed",
+            "url": "https://www.metacto.com/blogs/the-true-cost-of-supabase-a-comprehensive-guide-to-pricing-integration-and-maintenance",
+            "encrypted_content": "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",
+            "page_age": "183 days ago"
+          },
+          {
+            "type": "web_search_result",
+            "title": "Supabase Pricing 2026: Free Tier Limits & Real Costs",
+            "url": "https://designrevision.com/blog/supabase-pricing",
+            "encrypted_content": "EskNCioIFRgCIiQ4MGE4NWIyYy1hY2NjLTQ4YzYtOWZmMS0yOTBiNjFlOTE5N2QSDIRGlcmj34ARv5vJqhoMVxGk2PqzB7E8VTifIjCWEaViWF44YCsZNLHaAeEMJqgrN7LfPf7aBIXHqwkh7j30aLZOvDzK7Nwg/os+tqsqzAydduntcD1Bh6zmNW4WRdONVeqfPJq1h9K3TewY44xadJyEjLoxU/uY4kAu7yau7tpT3j4Fsj3SW6FYwMF519vDHVNnGheMloWFP8wOKOj7rzCOol7cgZY1GibdmJgEuIdzMQO6P5Kf4DWVKdkGjvzscxIwbokM3D6Z5iNS9hbOcOKZiQdmta9hQHgxbwg5PNsOb4RDu6wKapOyMLBuwHnsIf8Xv9rpC+32H5ywaQektLI708uViOvX6fN1LoyVjcktGxmdD9rglGDBlOc/w1pvHfJ5ykUSLlTTyTxKXmGsnkQSD25uBhipVMbt7FIdBTWdScFtaCZWKgyuXmXAd/fZ16x18sG4eUy424I52xossRPd4jpIdMjX153pxeBoaQipyGCxB+8RwHce07qLcu2DCSzbWzPxdoKujXqQpp03txoii51RkV4gxrg5NkMpZeRtjhlNTzG0xk+q5ry8dWBjvM0sXqm6VaIqzBYCEiyNYmwKbL0CkqQ8l7G8c775Erv+BNRWHEB1rSFqlz18MklsiqRQ2COp6VzlaBF0BHs7Qmt14xq4unwLXiBMJrKqAAXXpzWvfOPeQHa9o75vAL0Myn/Jpb/KibBD+ExuRhqX/e2hGvNNg1wDl+aseNjn0hm1w+dFKwA4O+vXBKE099uGglozY6pcOmtolMucF09LHE+eV7ufjjUew5cTZ2N2JGymRgeeLX8sDLPiuMqRLY7C1IQ1OFgmjiVsQymmvBCz3bIpTg4c0RVZWTZZDXwad+BMT8XLcelM2p226OWSMtJhPDN+yP2FGGLfVrRCSv02KKkJ1YSwcpMqyHWorWhF7eOu8dLuImvQFzV64PXwfUnbEm624doO4Y3orfJxLiKIcyy++owurhWqtF9HPkU1ixrrm6Mbbke54I/ZJcg8vKr7e829Cc5A9c9nv1bJBsmzhCR9aXeBC0c3KZhaANz0c4jd9k8G2pw4EOkeZUzTGbpVn2GYOqm1InFS73AMcvhms2HzZYc7MDrgP8JO+Rf/aj57OLo3FJS4BtTaHCtC4+yJ5anG+44gsR6yUGvgCa74yU9FBNaCyfmZrk7NAGCHBqRPbzy8/WR6BZst8aDxXMwHK7QMoxXyayAP2xPJIawS2xE0lBKiSZ+wtj8Vd69GZ3oUWzMDYhzeA7Dub33FZut2ismYGEGrYfDEt/BjaE6+mSOorOeAr2CQnrqB0OJUuV6xHRaLCMXIdL2FSFpRXUwQTwynjAGo3q6xDEt12LXDsGWYkPHvGonnNYnyidR88TxsigiFr7hXyHKwB/bmaXGB5iXb3eKFY035hUAcT9rwmjRrkQs0qQvt/z5jEhXQV7hvlbp6LMLgBz8/mdaGL2DvW9bwwZtPPiPQfIeIvKLBiK+oQwOg26U8598koUtpxXW8osvZdnAhF2qZ2a4LiZzUMN9As2FLPuRCkPYavRJ0EPSYlOTX+PAOAL/uxlZ2zsuejjGbFZ6zv4uExHcKEroVL2+KiRgCav3zWbUufy+81D3egCrbewRVkQgiyOiaNN95oG08eAHzMu7xKgWaY6+bmQFrz/LeIq9a7nYvQq7D59JFcSwVGKgoBy0ryexX/9FNyEgv80JRHbxWI6pEh4EZ0xdiaOdM7r7H+Wb/E1Pz8A++D8AYgzT3/DSfxYFGSM2rhyd3yPZswU75hr3uMh908xfRkf32B6elasA3msix7SqsZz/vl7b3hPSUTADgV+0zoKgk5OIQ8bU4jIPMUo2BrQ00HeZGH32dyakS8z8M8s3H/e6OpxYr4LlWiuOECSFskndHGoA2h6+tTYe/qMuPXXKl1JS+CfvqK/da8+KLt9x27Anht8yTFtxZZqzZqiR8dlPgu+14ivWPWccc6Wuo/eQM0m62QgV2KZ9cdT53ikCEB5jOXaPtglLQbwOCnNsC/bFxlBiOFgfan0zFFWZTqvOq3T43HZjDemE2nlCA3RpCzq5JsgGf4kMp0rQ0iGKV78Npq7xQVee73yBj8GqK7/wu6QBRK6ztjgzBjtEXORcHyKL7bFX7Uzzhitop3ypMOJmzPe/ehdIujsqFq4s+ACWuaqVwc1WTlt71xvWauJYBWuphRKK1zFGf7bAtNgTf5iy8q5SKMm3r3ccDrA83shdQrP6L8g36CHYMGAM=",
+            "page_age": "131 days ago"
+          },
+          {
+            "type": "web_search_result",
+            "title": "Supabase Free Tier Limits 2026: Database, Projects, Pausing",
+            "url": "https://aiagencyplus.com/supabase-free-tier-limits/",
+            "encrypted_content": "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",
+            "page_age": "2 days ago"
+          },
+          {
+            "type": "web_search_result",
+            "title": "Supabase free tier limits: what the Free plan includes",
+            "url": "https://park23.io/insights/supabase-free-tier-limits/",
+            "encrypted_content": "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",
+            "page_age": "17 days ago"
+          },
+          {
+            "type": "web_search_result",
+            "title": "Supabase free plan limits, and what happens at each one",
+            "url": "https://reeve.page/blog/supabase-free-plan-limits",
+            "encrypted_content": "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",
+            "page_age": "43 days ago"
+          }
+        ],
+        "caller": {
+          "type": "direct"
+        }
+      }
+    },
+    {
+      "type": "content_block_stop",
+      "index": 3
+    },
+    {
+      "type": "message_delta",
+      "delta": {
+        "stop_reason": "pause_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "container": null
+      },
+      "usage": {
+        "input_tokens": 23791,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "output_tokens": 1255,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "server_tool_use": {
+          "web_search_requests": 2,
+          "web_fetch_requests": 0
+        }
+      }
+    },
+    {
+      "type": "message_stop"
+    }
+  ],
+  "finalMessage": {
+    "model": "claude-sonnet-5-5",
+    "id": "msg_011CgvZgSxK839vXW7wKyHfJ",
+    "type": "message",
+    "role": "assistant",
+    "content": [
+      {
+        "type": "server_tool_use",
+        "id": "srvtoolu_01SrfT7XVZFroEummUR2SqLT",
+        "name": "web_search",
+        "input": {
+          "query": "Neon Postgres free plan limits pricing"
+        }
+      },
+      {
+        "type": "server_tool_use",
+        "id": "srvtoolu_01CPy8qhjSTZsN9ZqBr1rUgV",
+        "name": "web_search",
+        "input": {
+          "query": "Supabase free plan limits pricing"
+        }
+      },
+      {
+        "type": "web_search_tool_result",
+        "tool_use_id": "srvtoolu_01SrfT7XVZFroEummUR2SqLT",
+        "content": [
+          {
+            "type": "web_search_result",
+            "title": "Neon plans - Neon Docs",
+            "url": "https://neon.com/docs/introduction/plans",
+            "encrypted_content": "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",
+            "page_age": "6 days ago"
+          },
+          {
+            "type": "web_search_result",
+            "title": "What are the limits and quotas for Neon's Free plan? - Neon FAQs",
+            "url": "https://neon.com/faqs/free-plan-limits-and-quotas",
+            "encrypted_content": "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",
+            "page_age": "7 days ago"
+          },
+          {
+            "type": "web_search_result",
+            "title": "What are the best free or low-cost managed Postgres services for side projects that scale automatically when traffic picks up? - Neon FAQs",
+            "url": "https://neon.com/faqs/best-free-low-cost-managed-postgres-services",
+            "encrypted_content": "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",
+            "page_age": null
+          },
+          {
+            "type": "web_search_result",
+            "title": "Neon - Features, Pricing & Alternatives",
+            "url": "https://www.srvrlss.io/provider/neon/",
+            "encrypted_content": "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",
+            "page_age": "48 days ago"
+          },
+          {
+            "type": "web_search_result",
+            "title": "Neon Pricing: The Honest Cost of Serverless Postgres",
+            "url": "https://selfhost.dev/blog/neon-pricing-cost-of-serverless-postgres/",
+            "encrypted_content": "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",
+            "page_age": "10 days ago"
+          },
+          {
+            "type": "web_search_result",
+            "title": "Neon Pricing 2026: Plans, Limits & Changes",
+            "url": "https://www.saaspricepulse.com/tools/neon",
+            "encrypted_content": "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",
+            "page_age": "369 days ago"
+          },
+          {
+            "type": "web_search_result",
+            "title": "Neon Postgres Review 2026: Features, Pricing & Limits",
+            "url": "https://codewithsql.com/cloud-databases/postgresql/neon",
+            "encrypted_content": "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",
+            "page_age": null
+          },
+          {
+            "type": "web_search_result",
+            "title": "Neon Serverless Postgres Pricing 2026: Complete Breakdown &…",
+            "url": "https://vela.run/articles/neon-serverless-postgres-pricing-2026/",
+            "encrypted_content": "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",
+            "page_age": "141 days ago"
+          },
+          {
+            "type": "web_search_result",
+            "title": "Neon - Data Storage",
+            "url": "https://datastorage.com/cloud_providers/neon/",
+            "encrypted_content": "EswJCioIFRgCIiQ4MGE4NWIyYy1hY2NjLTQ4YzYtOWZmMS0yOTBiNjFlOTE5N2QSDEQNmFtRsVaQ76sukBoMtXLMyKZzfuMPfvZtIjB6IeYkuJs4k1rVIsAbEgW00qd3mRdT7sHV84+imJNX/vje3yy69w+fWYMwOHexVYEqzwiPxxuBHvS/hToSuurwWQs1P5yndVyPJ50pG+NR9ZF7YoryTfNxVkgyYdowm/oF3Zn3haI8E/ZsI6gZ6mAyIfolW1r+dy9G0ziKkPzvK3Fh6YWaj0/vfkYuWiPyCdI1ZP49qjWat3vFv+kJRbHe2cCO/hysMtpq749NxJmwV182fMk1ydE7Gx7kKX0QKsQeT3PWbgNXr5jikRymt6zloPaqowZd+yaVBzAN/Jhw+HuzXHdK4JLaUhek4PqJBZR03AfL3PytHrsBeYDsLH5Z73oWUB5sczzyI42F1KWnP7S0DVA99DTW/S5hZmHoR8t2pnhg5mbbHiYYSSR6zeFavUUVDU4LebaOJriFzoWc1z5j3I3EGjUPbNzFN6R5DO04Mxmyykknc78XfhOZj3Sw3vOpPfZmP2L1OoIp+X6AHKQiTfvNofhTR/HfNNC1N7zROsbCwQucRI1uf5s7Ce0KrBSjKS9bQZPm2e65rYG+yFioosMAVAnizjB+8QcKOMiZZomA73Yq3E39B7fAAcBBZFoVKCd2rTOAcZV0dvTubjM1lv2yBssUM5uWgBH2UUoTxep3bWTR6NICaijMLemIwpO7veWgsaX7zEbGsBm57AcacLRJYZg6Phog57NoAJINEHzYHjhj+GwT0fmaIqfDudy19HDfDujZZLX6ypZcUZNPwiTWhWetHUwi5NAQX/c9lNtSN5F7OB+wZ85Q74Tl+PsQYRTEApxqCm+8sWio9goX72S1J2PMBQhnQ44gQJCN0CDTvLkDYTv4bNvxvInlX5nIHZzSFFPsSQ9oezQOGyH8isopSTfNZ4l++EFSR0QFa5WldnPOY/HEyrQhCdnHgloKEU/i/SYvDl8S+pNnMGOpweT+ZJ2iiomUHA254NJoO08AtuP+s8I0jeDgPv9aGmg6cZQ8eNMCBdV8e55rPEoD5gviDZPEOX71KSOYz4GrYKCBhkEzOh4yqhC6Ovv4zRb9wxS7iiAeG8USeAJWwzlIycPULM2tzviWBYtQ6vzErgme2WTb2GEwy5OtlIzp4to4P/1Rutsfl9/pETQ8nvgcOBUdv/GxboCAeqQXZMKnkCJ+5jKJehRNpMrjzPSbDBn7DsjZPo5MHGBZj/rRk8DuLXaUCCIPZKdMBqktoPByj8/uUupv/r7WG38KjFaUYo0nLapgOvnLV2uX/e11cUvFaczW8+8UBetGBogbXct9+ebz5prg+7hfra3NgOx/O+JkH77oNcgu7wo/H1pw2dMjQFfpx9hfys4ferQbni3clLWDKks0YkS4WNG1K5rOXRFpO7yuKNbnEbflF0fTqxRPpAqNJYuixXw/buUL/EZx/lypOpWlt0DKxUFI/aopviCHKyxMw7QiiaH2sB7kwhg9KLHJhpoOO0WQmbpbasYhimqj5MIbi8fIsaMLIgVQfBq0qEY6uIbSeH9oob8jhUdrgQ8dxSz4QUktv0j/kKDaORgD",
+            "page_age": "147 days ago"
+          }
+        ],
+        "caller": {
+          "type": "direct"
+        }
+      },
+      {
+        "type": "web_search_tool_result",
+        "tool_use_id": "srvtoolu_01CPy8qhjSTZsN9ZqBr1rUgV",
+        "content": [
+          {
+            "type": "web_search_result",
+            "title": "Supabase Pricing: 2026 Guide to Plans, Limits, and Real-World Costs",
+            "url": "https://www.jetadmin.io/blog/supabase-pricing-2026-guide-to-plans-limits-and-real-world-costs/",
+            "encrypted_content": "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",
+            "page_age": "46 days ago"
+          },
+          {
+            "type": "web_search_result",
+            "title": "Supabase Pricing: Free Tier Limits, Pro Costs & Egress",
+            "url": "https://www.activepieces.com/blog/supabase-pricing-free-tier-limits-pro-costs-egress",
+            "encrypted_content": "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",
+            "page_age": "15 days ago"
+          },
+          {
+            "type": "web_search_result",
+            "title": "Supabase pricing: plans, free tier limits, and the bills AI is quietly creating",
+            "url": "https://www.cloudzero.com/blog/supabase-pricing/",
+            "encrypted_content": "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",
+            "page_age": "75 days ago"
+          },
+          {
+            "type": "web_search_result",
+            "title": "Supabase Pricing in 2026: What You'll Actually Pay (with Calculator)",
+            "url": "https://makerkit.dev/blog/saas/supabase-pricing",
+            "encrypted_content": "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",
+            "page_age": "135 days ago"
+          },
+          {
+            "type": "web_search_result",
+            "title": "Supabase Pricing 2026: Real Costs Exposed",
+            "url": "https://www.metacto.com/blogs/the-true-cost-of-supabase-a-comprehensive-guide-to-pricing-integration-and-maintenance",
+            "encrypted_content": "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",
+            "page_age": "183 days ago"
+          },
+          {
+            "type": "web_search_result",
+            "title": "Supabase Pricing 2026: Free Tier Limits & Real Costs",
+            "url": "https://designrevision.com/blog/supabase-pricing",
+            "encrypted_content": "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",
+            "page_age": "131 days ago"
+          },
+          {
+            "type": "web_search_result",
+            "title": "Supabase Free Tier Limits 2026: Database, Projects, Pausing",
+            "url": "https://aiagencyplus.com/supabase-free-tier-limits/",
+            "encrypted_content": "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",
+            "page_age": "2 days ago"
+          },
+          {
+            "type": "web_search_result",
+            "title": "Supabase free tier limits: what the Free plan includes",
+            "url": "https://park23.io/insights/supabase-free-tier-limits/",
+            "encrypted_content": "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",
+            "page_age": "17 days ago"
+          },
+          {
+            "type": "web_search_result",
+            "title": "Supabase free plan limits, and what happens at each one",
+            "url": "https://reeve.page/blog/supabase-free-plan-limits",
+            "encrypted_content": "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",
+            "page_age": "43 days ago"
+          }
+        ],
+        "caller": {
+          "type": "direct"
+        }
+      }
+    ],
+    "container": null,
+    "stop_reason": "pause_turn",
+    "stop_sequence": null,
+    "stop_details": null,
+    "usage": {
+      "input_tokens": 23791,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 0
+      },
+      "output_tokens": 1255,
+      "service_tier": "standard",
+      "inference_geo": "global",
+      "speed": "standard",
+      "server_tool_use": {
+        "web_search_requests": 2,
+        "web_fetch_requests": 0
+      },
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      }
+    },
+    "diagnostics": null,
+    "parsed_output": null
+  }
+}
