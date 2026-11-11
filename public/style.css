@@ -189,3 +189,36 @@ details.turn-details ul { margin: 0.3rem 0 0; padding-left: 1.2rem; }
   .message.user { margin-left: 0; }
   .top { flex-direction: column; }
 }
+
+/* ---- Status figure (public/character.js) ---- */
+#character svg { display: block; }
+#character .head { fill: var(--surface); stroke: var(--text); stroke-width: 2; }
+#character .eye { fill: var(--text); }
+#character .mouth, #character .prop path, #character .prop rect, #character .prop circle {
+  fill: none; stroke: var(--text); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round;
+}
+#character .prop rect, #character .prop circle { fill: var(--surface); }
+#character .prop-unsure circle { fill: var(--text); }
+#character .prop, #character .mouth-flat, #character .mouth-wavy { display: none; }
+
+#character [data-state="idle"] .mouth-smile { display: inline; }
+#character [data-state]:not([data-state="idle"]):not([data-state="unsure"]) .mouth-smile { display: none; }
+#character [data-state="recalling"] .mouth-flat,
+#character [data-state="searching"] .mouth-flat,
+#character [data-state="comparing"] .mouth-flat { display: inline; }
+#character [data-state="unsure"] .mouth-wavy { display: inline; }
+#character [data-state="unsure"] .mouth-smile { display: none; }
+
+#character [data-state="recalling"] .prop-recalling,
+#character [data-state="searching"] .prop-searching,
+#character [data-state="comparing"] .prop-comparing,
+#character [data-state="unsure"] .prop-unsure { display: inline; }
+
+@media (prefers-reduced-motion: no-preference) {
+  #character [data-state="searching"] .prop-searching { animation: figure-search 1.2s ease-in-out infinite; transform-origin: 30px 20px; }
+  #character [data-state="comparing"] .prop-comparing { animation: figure-balance 1.6s ease-in-out infinite; transform-origin: 24px 10px; }
+  #character [data-state="unsure"] .body { animation: figure-tilt 2s ease-in-out infinite; transform-origin: 24px 36px; }
+}
+@keyframes figure-search { 50% { transform: rotate(-14deg); } }
+@keyframes figure-balance { 50% { transform: rotate(6deg); } }
+@keyframes figure-tilt { 50% { transform: rotate(-6deg); } }
