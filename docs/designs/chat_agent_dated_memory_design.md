@@ -1866,7 +1866,7 @@ Problem messages and fixes, defined once in `events.ts`:
     *   **Delete the build instructions:** `BUILD.md` and `CLAUDE.md`, which
         only guide the build session. `docs/stage0/` stays as the record of
         the measurements quoted in `DESIGN.md`.
-    *   **Check for local paths:** `grep -rn "/Users/" docs README.md
+    *   **Check for local paths:** `grep -rn "<local home path>" docs README.md
         DESIGN.md` must return nothing.
 
     `challenge.md` and `docs/` stay.
