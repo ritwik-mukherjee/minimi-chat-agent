@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>minimi chat agent</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="top">
+    <div>
+      <h1>minimi chat agent</h1>
+      <p class="tagline">Answers with web search. Remembers what you asked, by date.</p>
+    </div>
+    <button type="button" id="toggle-saved" aria-expanded="false" aria-controls="saved-panel">Saved turns</button>
+  </header>
+
+  <div id="key-banner" class="banner" role="alert" hidden></div>
+
+  <main>
+    <section id="messages" aria-label="Conversation">
+      <p id="empty-hint" class="hint">Ask anything. Try "What does Neon's free tier include?", then "What did I ask you earlier today? Is it still correct?"</p>
+    </section>
+
+    <section id="saved-panel" aria-labelledby="saved-heading" hidden>
+      <div class="saved-head">
+        <h2 id="saved-heading">Saved turns</h2>
+        <button type="button" id="clear-saved">Clear saved turns</button>
+      </div>
+      <div id="saved-list"></div>
+    </section>
+  </main>
+
+  <footer class="composer">
+    <div class="status-row">
+      <div id="character" aria-hidden="true"></div>
+      <p id="status" role="status"></p>
+    </div>
+    <form id="chat-form" autocomplete="off">
+      <label for="message" class="visually-hidden">Your message</label>
+      <textarea id="message" rows="1" maxlength="4000" placeholder="Ask a question" required></textarea>
+      <button type="submit" id="send">Send</button>
+    </form>
+  </footer>
+
+  <script type="module" src="/app.js"></script>
+</body>
+</html>
