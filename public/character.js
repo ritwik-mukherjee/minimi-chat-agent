@@ -14,6 +14,47 @@ const COLORS = { cream: 0xfff1dc, patch: 0xe9a46a, pink: 0xeaa3a8, dark: 0x2b242
 const SMOOTHING = 0.08; // how fast the pose moves toward its target, per frame
 const TAIL_SEGMENTS = 22;
 
+// A canvas of short, slightly curved hair strokes in random greys, used as a bump map.
+function makeFurTexture(THREE) {
+  const size = 256;
+  const canvas = document.createElement("canvas");
+  canvas.width = canvas.height = size;
+  const ctx = canvas.getContext("2d");
+  ctx.fillStyle = "#808080";
+  ctx.fillRect(0, 0, size, size);
+  ctx.lineCap = "round";
+  for (let i = 0; i < 5000; i++) {
+    const x = Math.random() * size;
+    const y = Math.random() * size;
+    const length = 5 + Math.random() * 9;
+    const bend = (Math.random() - 0.5) * 4;
+    const shade = 90 + Math.floor(Math.random() * 110);
+    ctx.strokeStyle = `rgb(${shade},${shade},${shade})`;
+    ctx.lineWidth = 0.8 + Math.random() * 0.8;
+    ctx.beginPath();
+    ctx.moveTo(x, y);
+    ctx.quadraticCurveTo(x + bend, y + length / 2, x, y + length);
+    ctx.stroke();
+  }
+  const texture = new THREE.CanvasTexture(canvas);
+  texture.wrapS = texture.wrapT = THREE.RepeatWrapping;
+  texture.repeat.set(3, 3);
+  return texture;
+}
+
+// A soft dark oval that fades to nothing, drawn on the ground under the cat.
+function makeShadowTexture(THREE) {
+  const canvas = document.createElement("canvas");
+  canvas.width = canvas.height = 128;
+  const ctx = canvas.getContext("2d");
+  const gradient = ctx.createRadialGradient(64, 64, 4, 64, 64, 64);
+  gradient.addColorStop(0, "rgba(60,40,20,0.35)");
+  gradient.addColorStop(1, "rgba(60,40,20,0)");
+  ctx.fillStyle = gradient;
+  ctx.fillRect(0, 0, 128, 128);
+  return new THREE.CanvasTexture(canvas);
+}
+
 function createCat(THREE, mount) {
   const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
   const scene = new THREE.Scene();
@@ -25,7 +66,17 @@ function createCat(THREE, mount) {
   sun.position.set(3, 5, 5);
   scene.add(sun);
 
-  const material = (color) => new THREE.MeshStandardMaterial({ color, roughness: 0.85 });
+  // Fur: a procedural texture of short hair streaks drives a bump map, and a sheen layer
+  // gives the soft light edge that real fur has. No image files are needed.
+  const furTexture = makeFurTexture(THREE);
+  const material = (color, fuzzy = true) => new THREE.MeshPhysicalMaterial({
+    color,
+    roughness: 0.9,
+    ...(fuzzy ? {
+      bumpMap: furTexture, bumpScale: 1.4,
+      sheen: 1, sheenRoughness: 0.45, sheenColor: new THREE.Color(0xfff6ea),
+    } : {}),
+  });
   const ball = (radius, color, scale = [1, 1, 1]) => {
     const mesh = new THREE.Mesh(new THREE.SphereGeometry(radius, 32, 24), material(color));
     mesh.scale.set(...scale);
@@ -44,6 +95,20 @@ function createCat(THREE, mount) {
     paw.position.set(side * 0.3, -0.6, 0.6);
     cat.add(paw);
   }
+  // Haunches make the body read as a sitting cat, and a soft shadow grounds it.
+  for (const side of [-1, 1]) {
+    const haunch = ball(0.55, COLORS.cream, [0.8, 0.85, 1.0]);
+    haunch.position.set(side * 0.62, -0.25, -0.05);
+    cat.add(haunch);
+  }
+  const shadow = new THREE.Mesh(
+    new THREE.PlaneGeometry(3.4, 2.4),
+    new THREE.MeshBasicMaterial({ map: makeShadowTexture(THREE), transparent: true, depthWrite: false }),
+  );
+  shadow.rotation.x = -Math.PI / 2;
+  shadow.position.set(0.1, -0.88, 0.05);
+  scene.add(shadow);
+
   const tail = [];
   for (let i = 0; i < TAIL_SEGMENTS; i++) {
     const segment = ball(0.15, i > TAIL_SEGMENTS - 6 ? COLORS.patch : COLORS.cream);
@@ -69,7 +134,7 @@ function createCat(THREE, mount) {
     const ear = new THREE.Group();
     ear.position.set(side * 0.58, 0.72, -0.02);
     const outer = new THREE.Mesh(new THREE.ConeGeometry(0.36, 0.6, 4), material(COLORS.cream));
-    const inner = new THREE.Mesh(new THREE.ConeGeometry(0.2, 0.38, 4), material(COLORS.pink));
+    const inner = new THREE.Mesh(new THREE.ConeGeometry(0.2, 0.38, 4), material(COLORS.pink, false));
     inner.position.set(0, -0.04, 0.1);
     outer.rotation.y = Math.PI / 4;
     inner.rotation.y = Math.PI / 4;
@@ -81,6 +146,7 @@ function createCat(THREE, mount) {
   const eyes = [];
   for (const side of [-1, 1]) {
     const eye = ball(0.1, COLORS.dark, [1, 1.25, 0.6]);
+    eye.material = new THREE.MeshPhysicalMaterial({ color: COLORS.dark, roughness: 0.15, clearcoat: 1 });
     eye.position.set(side * 0.34, 0.06, 0.78);
     head.add(eye);
     eyes.push(eye);
@@ -89,11 +155,12 @@ function createCat(THREE, mount) {
     head.add(glint);
   }
   const nose = ball(0.06, COLORS.pink, [1.2, 0.8, 0.8]);
+  nose.material = new THREE.MeshPhysicalMaterial({ color: COLORS.pink, roughness: 0.35 });
   nose.position.set(0, -0.12, 0.85);
   head.add(nose);
   for (const side of [-1, 1]) {
     for (const tilt of [-0.15, 0, 0.15]) {
-      const whisker = new THREE.Mesh(new THREE.CylinderGeometry(0.008, 0.008, 0.55, 6), material(COLORS.dark));
+      const whisker = new THREE.Mesh(new THREE.CylinderGeometry(0.008, 0.008, 0.55, 6), material(COLORS.dark, false));
       whisker.rotation.z = Math.PI / 2 + tilt * side;
       whisker.position.set(side * 0.7, -0.2 + tilt * 0.4, 0.7);
       head.add(whisker);
