@@ -46,7 +46,7 @@
 
 *   An undated reference that shares no words with the saved turn is missed; the saved-turns view lists everything.
 *   A near miss can match on one weak shared word (for example "pricing"), and the model then has to say the saved turn is unrelated.
-*   Answers on search turns appear all at once, and the page shows plain text, not formatted markdown.
+*   Answers on search turns appear all at once, because the API sends the text in one burst.
 
 ## With another week
 

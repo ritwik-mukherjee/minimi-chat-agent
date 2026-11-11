@@ -93,7 +93,12 @@ main { flex: 1; padding-top: 0.5rem; padding-bottom: 1rem; }
   overflow-wrap: anywhere;
 }
 .message.assistant { overflow-wrap: anywhere; }
-.answer { white-space: pre-wrap; }
+.answer p, .answer ul, .answer ol { margin: 0 0 0.75rem; }
+.answer ul, .answer ol { padding-left: 1.4rem; }
+.answer li { margin-bottom: 0.25rem; }
+.answer h4 { margin: 1rem 0 0.4rem; font-size: 1rem; }
+.answer code { background: var(--card); border-radius: 6px; padding: 0.1rem 0.35rem; font-size: 0.9em; }
+.answer a { color: var(--text); text-decoration-color: var(--accent); text-underline-offset: 2px; }
 
 .recalled-card {
   background: var(--card);

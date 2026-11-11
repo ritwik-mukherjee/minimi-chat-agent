@@ -80,6 +80,99 @@ function sourceList(sources) {
   return list;
 }
 
+// ---- Answer text: a small, safe markdown renderer ----
+// It builds elements with textContent only, so answer text can never become HTML.
+// It handles headings, bullet and numbered lists, **bold**, *italic*, `code` and [text](http link).
+
+const INLINE = /(`[^`]+`)|(\*\*[^*]+\*\*)|(\*[^*\s][^*]*\*)|(\[[^\]]+\]\([^)\s]+\))/g;
+
+function inline(parent, text) {
+  let last = 0;
+  for (const match of text.matchAll(INLINE)) {
+    if (match.index > last) parent.append(text.slice(last, match.index));
+    const token = match[0];
+    if (match[1]) {
+      parent.append(el("code", "", token.slice(1, -1)));
+    } else if (match[2]) {
+      const strong = el("strong");
+      inline(strong, token.slice(2, -2));
+      parent.append(strong);
+    } else if (match[3]) {
+      parent.append(el("em", "", token.slice(1, -1)));
+    } else {
+      const [, label, href] = token.match(/^\[([^\]]+)\]\(([^)]+)\)$/);
+      const url = safeUrl(href);
+      if (url) {
+        const link = el("a", "", label);
+        link.href = url.href;
+        link.target = "_blank";
+        link.rel = "noopener noreferrer";
+        parent.append(link);
+      } else {
+        parent.append(label);
+      }
+    }
+    last = match.index + token.length;
+  }
+  if (last < text.length) parent.append(text.slice(last));
+}
+
+function renderMarkdown(container, text) {
+  const blocks = [];
+  let paragraph = null;
+  let list = null;
+
+  for (const line of text.split("\n")) {
+    const bullet = line.match(/^\s*[-*\u2022]\s+(.*)$/);
+    const numbered = line.match(/^\s*\d+[.)]\s+(.*)$/);
+    const heading = line.match(/^#{1,6}\s+(.*)$/);
+
+    if (bullet || numbered) {
+      const tag = bullet ? "ul" : "ol";
+      if (!list || list.tag !== tag) {
+        list = { tag, items: [] };
+        blocks.push(list);
+      }
+      list.items.push((bullet ?? numbered)[1]);
+      paragraph = null;
+    } else if (heading) {
+      blocks.push({ tag: "h4", text: heading[1] });
+      paragraph = null;
+      list = null;
+    } else if (line.trim() === "") {
+      paragraph = null;
+      list = null;
+    } else {
+      list = null;
+      if (!paragraph) {
+        paragraph = { tag: "p", lines: [] };
+        blocks.push(paragraph);
+      }
+      paragraph.lines.push(line.trim());
+    }
+  }
+
+  const nodes = blocks.map((block) => {
+    const node = el(block.tag);
+    if (block.items) {
+      for (const item of block.items) {
+        const li = el("li");
+        inline(li, item);
+        node.append(li);
+      }
+    } else if (block.lines) {
+      block.lines.forEach((line, i) => {
+        if (i > 0) node.append(el("br"));
+        inline(node, line);
+      });
+    } else {
+      inline(node, block.text);
+    }
+    return node;
+  });
+  container.replaceChildren(...nodes);
+}
+
 // The elements of one assistant reply, and what the details area needs to know.
 function newReply() {
   const root = el("article", "message assistant");
@@ -94,7 +187,7 @@ function newReply() {
   details.append(detailsList);
   details.hidden = true;
   root.append(recalledSlot, answer, sourcesSlot, problemsSlot, details);
-  return { root, recalledSlot, answer, sourcesSlot, problemsSlot, details, detailsList, queries: [], routed: null };
+  return { root, recalledSlot, answer, rawText: "", sourcesSlot, problemsSlot, details, detailsList, queries: [], routed: null };
 }
 
 function renderRecalled(reply, event) {
@@ -157,7 +250,8 @@ function render(reply, event) {
       setStatus(`Searching: ${event.query}`, "searching");
       break;
     case "text":
-      reply.answer.textContent += event.delta;
+      reply.rawText += event.delta;
+      renderMarkdown(reply.answer, reply.rawText);
       break;
     case "sources":
       reply.sourcesSlot.replaceChildren(sourceList(event.sources));
